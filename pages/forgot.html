@@ -11,64 +11,36 @@
     <title>eWins - Mot de passe oublié</title>
 </head>
 <body>
-    <div class="background">
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
-        <span class="bg"></span>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="../img/logo-removebg.png" alt=""><p>eWins</p></li>
+                <li><a href="../index.html" data-text="&nbsp;Accueil&nbsp;">&nbsp;Accueil&nbsp;</a></li>
+                <li><a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;">&nbsp;Tournois&nbsp;</a></li>
+                <li><a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</a></li>
+            </ul>
+            <div>
+                <button onclick="window.location.href='../pages/login.html'">Se connecter</button>
+                <button onclick="window.location.href='../pages/create.html'">Créer un compte</button>
+            </div>
+        </nav>
+    </header>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><img src="../img/logo-removebg.png" alt=""><p>eWins</p></li>
-                    <li><a href="../index.html" data-text="&nbsp;Accueil&nbsp;">&nbsp;Accueil&nbsp;</a></li>
-                    <li><a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;">&nbsp;Tournois&nbsp;</a></li>
-                    <li><a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</a></li>
-                </ul>
-                <div>
-                    <button onclick="window.location.href='../pages/login.html'">Se connecter</button>
-                    <button onclick="window.location.href='../pages/create.html'">Créer un compte</button>
-                </div>
-            </nav>
-        </header>
+    <main id="main-form">
+        <article>
+            <h3>Réinitialiser le mot de passe</h3>
+            <form>
+                <label for="username"><input class="form" id="username" type="email" required placeholder="e-mail de récupération"></label>
+                <button type="submit">Recevoir l'e-mail de récupération</button>
+            </form>
+            <div class="option">
+                <a href="./create.html">Créer un compte ?</a>
+            </div>
+        </article>
+    </main>
 
-        <main id="main-form">
-            <article>
-                <h3>Réinitialiser le mot de passe</h3>
-                <form>
-                    <label for="username"><input class="form" id="username" type="email" required placeholder="e-mail de récupération"></label>
-                    <button type="submit">Recevoir l'e-mail de récupération</button>
-                </form>
-                <div class="option">
-                    <a href="./create.html">Créer un compte ?</a>
-                </div>
-            </article>
-        </main>
-
-        <footer>
-            <p>@2022 Enzo Vullo</p>
-        </footer>
-    </div>
+    <footer>
+        <p>@2022 Enzo Vullo</p>
+    </footer>
 </body>
 </html>
