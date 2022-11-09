@@ -1,0 +1,93 @@
+#tournois, #tournois div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#tournois div {
+    width: 70%;
+    padding: 2.5%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2.5%;
+}
+
+#tournois article {
+    margin-bottom: 1%;
+    width: 90%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tournois summary:hover {
+    cursor: pointer;
+    color: rgb(73, 46, 144);
+}
+
+#tournois summary {
+    list-style: none;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+    padding: 20px 0;
+}
+
+#tournois ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tournois .btn-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+#tournois li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: rgb(73, 46, 144);
+}
+
+#tournois li span {
+    color: white;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+}
+
+.btn-ul button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin: 2.5% 0;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgb(73, 46, 144);
+}
+
+.btn-ul li:first-child {
+    margin-right: 20px;
+}
+
+.btn-ul button:hover {
+    transform: scale(110%);
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    cursor: pointer;
+}

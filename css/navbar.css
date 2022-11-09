@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(73, 46, 144, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(73, 46, 144, 1);
+    padding: 20px;
+}
+
+nav div button:first-child {
+    color: white;
+    margin-right: 15px;
+}
+
+nav div button:last-child {
+    color: rgb(73, 46, 144);
+    background-color: white;
+}
+
+nav button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin: 7.5% 0;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    transform: scale(110%);
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    cursor: pointer;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    margin-right: 5%;
+}
+
+nav ul li img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li p {
+    font-size: 1.3em;
+    color: white;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    animation: slidein 1.5s;
+}
+
+@keyframes slidein {
+    0% {
+        top: -100%;
+    }
+    70% {
+        top: 100%;
+    }
+    100% {
+        top: 60%;
+    }
+}
+
+nav ul li a {
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(175, 175, 175, 0.9);
+}
+
+nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: transparent;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 2px solid #aedaf2;
+    -webkit-text-stroke: 1px #aedaf2;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px #aedaf2);
+}

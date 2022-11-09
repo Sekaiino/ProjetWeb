@@ -1,0 +1,54 @@
+#accueil, #accueil div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#accueil div {
+    width: 70%;
+    padding: 2.5%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2.5%;
+}
+
+#accueil article {
+    margin-bottom: 1%;
+    width: 90%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#accueil h2, h3 {
+    color: white;
+    -webkit-text-stroke: 0.5px rgb(73, 46, 144);
+}
+
+#accueil h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 2.5%;
+}
+
+#accueil h3 {
+    align-self: flex-start;
+    margin: 20px 0 0 20px;
+}
+
+#accueil p {
+    color: rgb(73, 46, 144);
+    text-align: justify;
+    margin: 20px;
+}
