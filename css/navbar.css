@@ -6,12 +6,13 @@
     box-sizing: border-box;
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
 }
-
 nav {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1;
     background-color: rgba(73, 46, 144, 0.7);
