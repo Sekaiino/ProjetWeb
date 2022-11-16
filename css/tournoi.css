@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-#tournois div {
+#tournois #main-display {
     width: 70%;
     padding: 2.5%;
     border-radius: 5px;
@@ -60,12 +60,16 @@
 }
 
 #tournois .btn-ul {
-    margin: 12% 15% 2% 0;
-    align-self: flex-end;
+    width: 70%;
+    margin: 12% auto 2% auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+
+#tournois .btn-ul div {
+    display: flex;
+    flex-direction: row;
 }
 
 #tournois li {

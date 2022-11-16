@@ -62,26 +62,26 @@ nav button:hover {
     cursor: pointer;
 }
 
-nav ul {
+nav .nav-ul {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-nav ul li {
+nav .nav-ul li {
     position: relative;
     list-style: none;
     margin-right: 5%;
 }
 
-nav ul li img {
+nav .nav-ul li img {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-nav ul li p {
+nav .nav-ul li p {
     font-size: 1.3em;
     color: white;
     -webkit-text-stroke: 1px rgb(73, 46, 144);
@@ -104,7 +104,7 @@ nav ul li p {
     }
 }
 
-nav ul li a {
+nav .nav-ul li a {
     position: relative;
     font-weight: bold;
     text-decoration: none;
@@ -116,7 +116,7 @@ nav ul li a {
     -webkit-text-stroke: 1px rgba(175, 175, 175, 0.9);
 }
 
-nav ul li a::before {
+nav .nav-ul li a::before {
     content: attr(data-text);
     position: absolute;
     color: transparent;
@@ -127,9 +127,58 @@ nav ul li a::before {
     -webkit-text-stroke: 1px #aedaf2;
 }
 
-nav ul li a:hover::before {
+nav .nav-ul li a:hover::before {
     width: 100%;
     filter: drop-shadow(0 0 25px #aedaf2);
+}
+
+nav .user-profile {
+    position: absolute;
+    left: 90%;
+}
+nav .user-profile summary {
+    list-style: none;
+}
+nav .user-profile summary:hover {
+    cursor: pointer;
+}
+
+nav .user-profile img {
+    border-radius: 50%;
+    width: 6vw;
+    height: 10vh;
+}
+nav .user-profile ul {
+    background-color: rgba(73, 46, 144, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 132.5%;
+    left: -30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+    padding: 2.5% 0;
+    border-radius: 0 0 4px 4px;
+}
+nav .user-profile ul li {
+    list-style: none;
+    padding: 2.5%;
+    margin: 5% 0;
+}
+nav .user-profile ul li p {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+nav .user-profile ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav .user-profile ul li a:hover {
+    color: #aedaf2;
+    font-style: italic;
 }
 
 /* Footer */
