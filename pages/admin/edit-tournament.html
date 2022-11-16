@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/form.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <title>eWins - Edition tournois</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><img src="../img/logo-removebg.png" alt=""><p>eWins</p></li>
-                <li><a href="../index.html" data-text="&nbsp;Accueil&nbsp;">&nbsp;Accueil&nbsp;</a></li>
-                <li><a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;">&nbsp;Tournois&nbsp;</a></li>
-                <li><a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</a></li>
-            </ul>
-            <div>
-                <button onclick="window.location.href='../pages/login.html'">Se connecter</button>
-                <button onclick="window.location.href='../pages/create.html'">Créer un compte</button>
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/general.css" />
+        <link rel="stylesheet" href="../css/form.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <title>eWins - Edition tournois</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <img src="../img/logo-removebg.png" alt="" />
+                        <p>eWins</p>
+                    </li>
+                    <li>
+                        <a href="../index.html" data-text="&nbsp;Accueil&nbsp;"
+                            >&nbsp;Accueil&nbsp;</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;"
+                            >&nbsp;Tournois&nbsp;</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;"
+                            >&nbsp;Contact&nbsp;</a
+                        >
+                    </li>
+                </ul>
+                <div>
+                    <button onclick="window.location.href='../pages/login.html'">
+                        Se connecter
+                    </button>
+                    <button onclick="window.location.href='../pages/create.html'">
+                        Créer un compte
+                    </button>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <label for="tournament">Tournoi</label>
-        <select name="tournament" id="tournament">
-            <option value="belote">Tournoi de belote</option>
-            <option value="echecs">Tournoi d'échecs</option>
-            <option value="tennis">Tournoi de tennis</option>
-            <option value="ping-pong">Tournoi de ping-pong</option>
-            <option value="fifa">Tournoi FIFA</option>
-        </select>
-    </main>
+        <main>
+            <label for="tournament">Tournoi</label>
+            <select name="tournament" id="tournament">
+                <option value="belote">Tournoi de belote</option>
+                <option value="echecs">Tournoi d'échecs</option>
+                <option value="tennis">Tournoi de tennis</option>
+                <option value="ping-pong">Tournoi de ping-pong</option>
+                <option value="fifa">Tournoi FIFA</option>
+            </select>
+        </main>
 
-    <footer>
-        <p>@2022 Enzo Vullo</p>
-    </footer>
-</body>
+        <footer>
+            <p>@2022 Enzo Vullo</p>
+        </footer>
+    </body>
 </html>
