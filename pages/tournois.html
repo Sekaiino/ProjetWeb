@@ -34,19 +34,19 @@
                         >
                     </li>
                 </ul>
-                <div>
-                    <button onclick="window.location.href='../pages/login.html'">
-                        Se connecter
-                    </button>
-                    <button onclick="window.location.href='../pages/create.html'">
-                        Créer un compte
-                    </button>
-                </div>
+                <!-- <div>
+                    <a href="../pages/login.html">
+                        <button>Se connecter</button>
+                    </a>
+                    <a href="../pages/create.html">
+                        <button>Créer un compte</button>
+                    </a>
+                </div> -->
                 <details class="user-profile">
                     <summary><img src="../img/pp.png" alt="profile picture"></summary>
                     <ul>
                         <li><p>Vullo Enzo</p></li>
-                        <li><a href="">Editer profil</a></li>
+                        <li><a href="./edit-profile.html">Editer profil</a></li>
                         <li><a href="">Déconnexion</a></li>
                     </ul>
                 </details>
@@ -56,12 +56,22 @@
         <main id="tournois">
             <ul class="btn-ul">
                 <div>
-                    <li><a href="./admin/edit-score.html"><button>Edition des scores</button></a></li>
-                    <li><a href="./admin/edit-tournament.html"><button>Edition des tournois</button></a></li>
+                    <li>
+                        <a href="./admin/edit-score.html"><button>Edition des scores</button></a>
+                    </li>
+                    <li>
+                        <a href="./admin/edit-tournament.html"
+                            ><button>Edition des tournois</button></a
+                        >
+                    </li>
                 </div>
                 <div>
-                    <li><a href="./#"><button>Liste des participants</button></a></li>
-                    <li><a href="./tournament-tree.html"><button>Arbre des rencontres</button></a></li>
+                    <li>
+                        <a href="./#"><button>Liste des participants</button></a>
+                    </li>
+                    <li>
+                        <a href="./tournament-tree.html"><button>Arbre des rencontres</button></a>
+                    </li>
                 </div>
             </ul>
             <div id="main-display">
