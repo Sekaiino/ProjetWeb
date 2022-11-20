@@ -1,4 +1,4 @@
-#tournois, #tournois div {
+#tournois {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -17,15 +17,22 @@
 }
 
 #tournois details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
+    animation: sweep 0.5s ease-in-out;
 }
 @keyframes sweep {
-    0%    {opacity: 0; margin-left: -10px}
-    100%  {opacity: 1; margin-left: 0px}
-  }
+    0% {
+        opacity: 0;
+        margin-left: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
 
 #tournois article {
     margin-bottom: 1%;
+    margin: 0 auto 1% auto;
     width: 90%;
     height: 60%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -92,6 +99,7 @@
     border: 1px solid #fff;
     border-radius: 5px;
     background-color: rgb(73, 46, 144);
+    transition: 0.5s;
 }
 
 .btn-ul li:first-child {
@@ -99,6 +107,97 @@
 }
 
 .btn-ul button:hover {
+    transform: scale(110%);
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    cursor: pointer;
+}
+
+.btn-ul .state {
+    width: 20%;
+}
+
+#state {
+    color: rgb(73, 46, 144);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+details section {
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-15%);
+}
+
+#player {
+    width: 35%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#player h3 {
+    font-size: 1em;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(73, 46, 144);
+    margin-bottom: 5px;
+}
+
+#tree {
+    width: 60%;
+    margin: 10% auto 10% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#tree .tree-column {
+    height: 30vh;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#tree .tree-column:last-child p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+}
+
+#tree .tree-column p {
+    text-align: center;
+    width: 140%;
+    padding: 2px 5px;
+    color: rgb(73, 46, 144);
+    background-color: white;
+    border-radius: 4px;
+}
+
+details button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    margin: 2.5% 0;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgb(73, 46, 144);
+    transition: 0.5s;
+}
+
+details button:hover {
     transform: scale(110%);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;

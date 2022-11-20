@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/footer.css" />
         <link rel="stylesheet" href="../css/tournoi.css" />
         <link rel="icon" href="../img/logo-removebg.png" type="img/x-icon" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <title>eWins - Liste des tournois</title>
     </head>
     <body>
@@ -43,7 +44,7 @@
                     </a>
                 </div> -->
                 <details class="user-profile">
-                    <summary><img src="../img/pp.png" alt="profile picture"></summary>
+                    <summary><img src="../img/pp.png" alt="profile picture" /></summary>
                     <ul>
                         <li><p>Vullo Enzo</p></li>
                         <li><a href="./edit-profile.html">Editer profil</a></li>
@@ -65,14 +66,11 @@
                         >
                     </li>
                 </div>
-                <div>
-                    <li>
-                        <a href="./#"><button>Liste des participants</button></a>
-                    </li>
-                    <li>
-                        <a href="./tournament-tree.html"><button>Arbre des rencontres</button></a>
-                    </li>
-                </div>
+                <li class="state"><select name="state" id="state">
+                    <option value="all">Tous</option>
+                    <option value="open">Ouvert</option>
+                    <option value="closed">Fermé</option>
+                </select></li>
             </ul>
             <div id="main-display">
                 <article>
@@ -83,9 +81,53 @@
                             <li><span>Nombre d'inscrits:</span> 10</li>
                             <li><span>Places disponibles:</span> 2</li>
                             <li><span>Statut:</span> ouvert</li>
-                            <li><span>Date d'ouverture:</span> O2 Avril 2022</li>
-                            <li><span>Date de fermeture:</span> 07 Avril 2022</li>
+                            <li><span>Date de fin des inscriptions:</span> O2 Avril 2022</li>
+                            <li><span>Date d'ouverture du tournoi:</span> 07 Avril 2022</li>
+                            <li><button>Rejoindre</button></li>
                         </ul>
+                        <section>
+                            <div id="player">
+                                <h3>Liste des participants</h3>
+                                <ul>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                </ul>
+                            </div>
+                            <div id="tree">
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p><span class="material-symbols-outlined">military_tech</span>Joueur</p>
+                                </div>
+                            </div>
+                        </section>
                     </details>
                 </article>
                 <article>
@@ -96,9 +138,53 @@
                             <li><span>Nombre d'inscrits:</span> 10</li>
                             <li><span>Places disponibles:</span> 2</li>
                             <li><span>Statut:</span> ouvert</li>
-                            <li><span>Date d'ouverture:</span> O2 Avril 2022</li>
-                            <li><span>Date de fermeture:</span> 07 Avril 2022</li>
+                            <li><span>Date de fin des inscriptions:</span> O2 Avril 2022</li>
+                            <li><span>Date d'ouverture du tournoi:</span> 07 Avril 2022</li>
+                            <li><button>Rejoindre</button></li>
                         </ul>
+                        <section>
+                            <div id="player">
+                                <h3>Liste des participants</h3>
+                                <ul>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                </ul>
+                            </div>
+                            <div id="tree">
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p><span class="material-symbols-outlined">military_tech</span>Joueur</p>
+                                </div>
+                            </div>
+                        </section>
                     </details>
                 </article>
                 <article>
@@ -109,9 +195,53 @@
                             <li><span>Nombre d'inscrits:</span> 10</li>
                             <li><span>Places disponibles:</span> 2</li>
                             <li><span>Statut:</span> ouvert</li>
-                            <li><span>Date d'ouverture:</span> O2 Avril 2022</li>
-                            <li><span>Date de fermeture:</span> 07 Avril 2022</li>
+                            <li><span>Date de fin des inscriptions:</span> O2 Avril 2022</li>
+                            <li><span>Date d'ouverture du tournoi:</span> 07 Avril 2022</li>
+                            <li><button>Rejoindre</button></li>
                         </ul>
+                        <section>
+                            <div id="player">
+                                <h3>Liste des participants</h3>
+                                <ul>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                </ul>
+                            </div>
+                            <div id="tree">
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p><span class="material-symbols-outlined">military_tech</span>Joueur</p>
+                                </div>
+                            </div>
+                        </section>
                     </details>
                 </article>
                 <article>
@@ -122,9 +252,53 @@
                             <li><span>Nombre d'inscrits:</span> 10</li>
                             <li><span>Places disponibles:</span> 2</li>
                             <li><span>Statut:</span> ouvert</li>
-                            <li><span>Date d'ouverture:</span> O2 Avril 2022</li>
-                            <li><span>Date de fermeture:</span> 07 Avril 2022</li>
+                            <li><span>Date de fin des inscriptions:</span> O2 Avril 2022</li>
+                            <li><span>Date d'ouverture du tournoi:</span> 07 Avril 2022</li>
+                            <li><button>Rejoindre</button></li>
                         </ul>
+                        <section>
+                            <div id="player">
+                                <h3>Liste des participants</h3>
+                                <ul>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                    <li>Joueur: inscrit</li>
+                                </ul>
+                            </div>
+                            <div id="tree">
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p><span class="material-symbols-outlined">military_tech</span>Joueur</p>
+                                </div>
+                            </div>
+                        </section>
                     </details>
                 </article>
                 <article>
@@ -135,9 +309,53 @@
                             <li><span>Nombre d'inscrits:</span> 10</li>
                             <li><span>Places disponibles:</span> 2</li>
                             <li><span>Statut:</span> ouvert</li>
-                            <li><span>Date d'ouverture:</span> O2 Avril 2022</li>
-                            <li><span>Date de fermeture:</span> 07 Avril 2022</li>
+                            <li><span>Date de fin des inscriptions:</span> O2 Avril 2022</li>
+                            <li><span>Date d'ouverture du tournoi:</span> 07 Avril 2022</li>
+                            <li><button>Rejoindre</button></li>
                         </ul>
+                        <section>
+                            <div id="player">
+                                <h3>Liste des participants</h3>
+                                <ul>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                    <li>Joueur</li>
+                                </ul>
+                            </div>
+                            <div id="tree">
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p>Joueur:<span> 0</span></p>
+                                    <br>
+                                    <p>Joueur:<span> 0</span></p>
+                                </div>
+                                <div class="tree-column">
+                                    <p><span class="material-symbols-outlined">military_tech</span>Joueur</p>
+                                </div>
+                            </div>
+                        </section>
                     </details>
                 </article>
             </div>

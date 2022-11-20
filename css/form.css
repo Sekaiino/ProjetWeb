@@ -35,6 +35,7 @@
     width: 100%;
     font-size: 0.9em;
     margin-top: 5px;
+    /* color: rgba(0, 0, 0, 0.6); */
 }
 
 #main-form article h3 {
@@ -70,7 +71,7 @@
     width: 30%;
     margin: 0 auto;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 #name {
@@ -145,11 +146,13 @@
     transform: scale(110%);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
+    transition: .5s;
 }
 
 .form:hover {
     transform: scale(105%);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    transition: .5s;
 }
 
 #main-form article .option {
@@ -160,7 +163,7 @@
 }
 
 .option a {
-    color:rgba(175, 175, 175, 0.9);
+    color:rgba(125, 125, 125, 0.9);
     font-size: 0.75em;
     margin-top: 10px;
 }
@@ -168,4 +171,78 @@
 #main-form article a:hover {
     transform: scale(105%);
     color:rgba(255, 255, 255, 1);
+}
+
+#main-form p {
+    color: rgba(73, 46, 144, 1);
+    text-align: center;
+}
+
+/* Select menu */
+.edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.5%;
+}
+.edit p {
+    margin-right: auto;
+    margin-left: 5%;
+    color: rgba(73, 46, 144, 1);
+}
+.edit input, .edit select {
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 5%;
+    width: 23%;
+    padding: 5px 7.5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.edit input:hover, .edit select:hover {
+    transform: scale(105%);
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    cursor: pointer;
+    transition: .5s;
+}
+#nb:hover {
+    cursor: text;
+}
+
+/* Edit score */
+table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 61.5%;
+    margin: 0 auto;
+}
+table tr th {
+    width: 50%;
+    margin: 5% auto 2.5% auto;
+}
+table tr td {
+    width: 50%;
+    margin-bottom: 2.5%;
+}
+table input[type="number"] {
+    margin: 0 10%;
+    width: 50%;
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+}
+input[type="number"]:hover {
+    transform: scale(105%);
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+    cursor: pointer;
+    transition: .5s;
+}
+table tr td label {
+    display: flex;
+    align-items: center;
+    color:rgba(73, 46, 144, 1);
+}
+.win {
+    width: 55%;
 }
