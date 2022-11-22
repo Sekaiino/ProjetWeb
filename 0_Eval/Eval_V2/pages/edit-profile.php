@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="../images/logo-removebg.png" type="image/x-icon" />
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../images/logo-removebg.png" type="img/x-icon" />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -13,39 +14,13 @@
         <title>eWins - Editer profil</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul class="nav-ul">
-                    <li>
-                        <img src="../images/logo-removebg.png" alt="" />
-                        <p>eWins</p>
-                    </li>
-                    <li>
-                        <a href="../index.php" data-text="&nbsp;Accueil&nbsp;"
-                            >&nbsp;Accueil&nbsp;</a
-                        >
-                    </li>
-                    <li>
-                        <a href="../pages/tournois.php" data-text="&nbsp;Tournois&nbsp;"
-                            >&nbsp;Tournois&nbsp;</a
-                        >
-                    </li>
-                    <li>
-                        <a href="../pages/contact.php" data-text="&nbsp;Contact&nbsp;"
-                            >&nbsp;Contact&nbsp;</a
-                        >
-                    </li>
-                </ul>
-                <details class="user-profile">
-                    <summary><img src="../images/pp.png" alt="profile picture" /></summary>
-                    <ul>
-                        <li><p>Vullo Enzo</p></li>
-                        <li><a href="./edit-profile.php">Editer profil</a></li>
-                        <li><a href="">Déconnexion</a></li>
-                    </ul>
-                </details>
-            </nav>
-        </header>
+        <?php
+            $a = TRUE;
+            $img = "..";
+            $pages = ".";
+            $index = ".."; 
+            include("../inc/header.inc.php") 
+        ?>
 
         <main id="main-form">
             <article>
@@ -86,8 +61,6 @@
             </article>
         </main>
 
-        <footer>
-            <p>@2022 Enzo Vullo</p>
-        </footer>
+        <?php include("../inc/footer.inc.php") ?>
     </body>
 </html>
