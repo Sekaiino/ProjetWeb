@@ -18,26 +18,26 @@
                         <p>eWins</p>
                     </li>
                     <li>
-                        <a href="../index.html" data-text="&nbsp;Accueil&nbsp;"
+                        <a href="../index.php" data-text="&nbsp;Accueil&nbsp;"
                             >&nbsp;Accueil&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;"
+                        <a href="../pages/tournois.php" data-text="&nbsp;Tournois&nbsp;"
                             >&nbsp;Tournois&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;"
+                        <a href="../pages/contact.php" data-text="&nbsp;Contact&nbsp;"
                             >&nbsp;Contact&nbsp;</a
                         >
                     </li>
                 </ul>
                 <!-- <div>
-                    <a href="../pages/login.html">
+                    <a href="../pages/login.php">
                         <button>Se connecter</button>
                     </a>
-                    <a href="../pages/create.html">
+                    <a href="../pages/create.php">
                         <button>Créer un compte</button>
                     </a>
                 </div> -->
@@ -45,7 +45,7 @@
                     <summary><img src="../images/pp.png" alt="profile picture" /></summary>
                     <ul>
                         <li><p>Vullo Enzo</p></li>
-                        <li><a href="./edit-profile.html">Editer profil</a></li>
+                        <li><a href="./edit-profile.php">Editer profil</a></li>
                         <li><a href="">Déconnexion</a></li>
                     </ul>
                 </details>
@@ -56,10 +56,10 @@
             <ul class="btn-ul">
                 <div>
                     <li>
-                        <a href="./admin/edit-score.html"><button>Edition des scores</button></a>
+                        <a href="./admin/edit-score.php"><button>Edition des scores</button></a>
                     </li>
                     <li>
-                        <a href="./admin/edit-tournament.html"
+                        <a href="./admin/edit-tournament.php"
                             ><button>Edition des tournois</button></a
                         >
                     </li>

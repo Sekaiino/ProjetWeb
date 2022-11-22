@@ -16,26 +16,26 @@
                         <p>eWins</p>
                     </li>
                     <li>
-                        <a href="../index.html" data-text="&nbsp;Accueil&nbsp;"
+                        <a href="../index.php" data-text="&nbsp;Accueil&nbsp;"
                             >&nbsp;Accueil&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="./tournois.html" data-text="&nbsp;Tournois&nbsp;"
+                        <a href="./tournois.php" data-text="&nbsp;Tournois&nbsp;"
                             >&nbsp;Tournois&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="./contact.html" data-text="&nbsp;Contact&nbsp;"
+                        <a href="./contact.php" data-text="&nbsp;Contact&nbsp;"
                             >&nbsp;Contact&nbsp;</a
                         >
                     </li>
                 </ul>
                 <!-- <div>
-                    <a href="./login.html">
+                    <a href="./login.php">
                         <button>Se connecter</button>
                     </a>
-                    <a href="./create.html">
+                    <a href="./create.php">
                         <button>Créer un compte</button>
                     </a>
                 </div> -->
@@ -43,7 +43,7 @@
                     <summary><img src="../images/pp.png" alt="profile picture" /></summary>
                     <ul>
                         <li><p>Vullo Enzo</p></li>
-                        <li><a href="./admin/edit-profile.html">Editer profil</a></li>
+                        <li><a href="./admin/edit-profile.php">Editer profil</a></li>
                         <li><a href="">Déconnexion</a></li>
                     </ul>
                 </details>
@@ -58,7 +58,7 @@
                     <label for="delete"><input class="form" type="text" name="delete" id="delete" placeholder="supprimer" required></label>
                     <button type="submit">Supprimer</button>
                     <section class="option">
-                        <a href="./admin/edit-tournament.html">Annuler</a>
+                        <a href="./admin/edit-tournament.php">Annuler</a>
                     </section>
                 </form>
             </article>

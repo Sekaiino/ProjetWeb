@@ -21,17 +21,17 @@
                         <p>eWins</p>
                     </li>
                     <li>
-                        <a href="../index.html" data-text="&nbsp;Accueil&nbsp;"
+                        <a href="../index.php" data-text="&nbsp;Accueil&nbsp;"
                             >&nbsp;Accueil&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="../pages/tournois.html" data-text="&nbsp;Tournois&nbsp;"
+                        <a href="../pages/tournois.php" data-text="&nbsp;Tournois&nbsp;"
                             >&nbsp;Tournois&nbsp;</a
                         >
                     </li>
                     <li>
-                        <a href="../pages/contact.html" data-text="&nbsp;Contact&nbsp;"
+                        <a href="../pages/contact.php" data-text="&nbsp;Contact&nbsp;"
                             >&nbsp;Contact&nbsp;</a
                         >
                     </li>
@@ -40,7 +40,7 @@
                     <summary><img src="../images/pp.png" alt="profile picture" /></summary>
                     <ul>
                         <li><p>Vullo Enzo</p></li>
-                        <li><a href="./edit-profile.html">Editer profil</a></li>
+                        <li><a href="./edit-profile.php">Editer profil</a></li>
                         <li><a href="">Déconnexion</a></li>
                     </ul>
                 </details>
