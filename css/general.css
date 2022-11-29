@@ -20,6 +20,9 @@ body {
 }
 
 /* NavBar */
+.nav-tel {
+    display: none;
+}
 nav {
     display: inline-flex;
     justify-content: space-between;
@@ -188,6 +191,69 @@ nav .user-profile ul li a {
 nav .user-profile ul li a:hover {
     color: #aedaf2;
     font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .nav-tel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-tel details {
+        width: 45%;
+        position: relative;
+    }
+    .nav-tel details summary {
+        list-style: none;
+        position: relative;
+    }
+    .nav-tel details summary img {
+        width: 70%;
+    }
+    .nav-tel details summary p {
+        font-size: 1.3em;
+        color: white;
+        -webkit-text-stroke: 1px rgb(73, 46, 144);
+        display: block;
+        position: absolute;
+        left: 17.5%;
+        top: 65%;
+        animation: slidein 1.5s;
+    }
+    .nav-tel details .nav-ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5%;
+    }
+    .nav-tel details .nav-ul li {
+        margin-bottom: 5%;
+    }
+    .nav-tel div {
+        margin-top: 4%;
+        width: 45%;
+    }
+    .nav-tel div a {
+        width: 70%;
+    }
+    .nav-tel div a button {
+        margin: 2.5% 0;
+        width: 100%;
+        font-size: 14px;
+    }
+    .nav-tel .user-profile {
+        width: 45%;
+        left: 50%;
+        top: 25%;
+    }
+    .nav-tel .user-profile img {
+        width: 40%;
+    }
 }
 
 /* Footer */

@@ -52,3 +52,18 @@
     text-align: justify;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    #accueil div {
+        width: 90%;
+        margin: 50% 0 10% 0;
+    }
+    #accueil article {
+        margin: 5% 0;
+    }
+    #accueil h2 {
+        width: 90%;
+        text-align: center;
+        margin-top: 5%;
+    }
+}
