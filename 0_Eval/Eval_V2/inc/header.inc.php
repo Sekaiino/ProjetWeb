@@ -27,6 +27,7 @@
                     Créer un compte
                 </a>
             </aside>
+
         <?php elseif($a == TRUE): ?>
             <details class="user-profile">
                 <summary><img src=<?php echo $img . "/images/pp.png" ?> alt="profile picture"></summary>
@@ -37,6 +38,7 @@
                 </ul>
             </details>
         <?php endif; ?>
+        
     </nav>
 
     <nav>
@@ -55,15 +57,21 @@
                 <a href=<?php echo $pages . "/contact.php" ?> data-text="&nbsp;Contact">&nbsp;Contact</a>
             </li>
         </ul>
+
         <?php if($a == FALSE): ?>
-            <aside>
-                <a class="btn" href=<?php echo $pages . "/login.php" ?>>
-                    Se connecter
-                </a>
-                <a class="btn" href=<?php echo $pages . "/register.php" ?>>
-                    Créer un compte
-                </a>
-            </aside>
+            <ul class="connect">
+                <li>
+                    <a class="btn" href=<?php echo $pages . "/login.php" ?>>
+                        Se connecter
+                    </a>
+                </li>
+                <li>
+                    <a class="btn" href=<?php echo $pages . "/register.php" ?>>
+                        Créer un compte
+                    </a>
+                </li>
+            </ul>
+
         <?php elseif($a == TRUE): ?>
             <details class="user-profile">
                 <summary><img src=<?php echo $img . "/images/pp.png" ?> alt="profile picture"></summary>

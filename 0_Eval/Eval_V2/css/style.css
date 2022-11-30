@@ -26,6 +26,7 @@ li {
 .nav-tel {
     display: none;
 }
+
 nav {
     display: inline-flex;
     justify-content: space-between;
@@ -42,12 +43,19 @@ nav {
     padding: 20px;
 }
 
-nav aside .btn:first-child {
+nav .connect {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .connect li:first-child .btn {
     color: white;
     margin-right: 15px;
 }
 
-nav aside .btn:last-child {
+nav .connect li:last-child .btn {
     color: rgb(73, 46, 144);
     background-color: white;
 }
@@ -63,8 +71,12 @@ nav .btn {
     border-radius: 5px;
 }
 
-nav .btn:hover {
+nav .connect li:hover {
     transform: scale(1.1);
+    transition: 0.5s;
+}
+
+nav .connect li:hover .btn {
     transition: 0.5s;
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
@@ -702,10 +714,15 @@ table tr td label {
     margin-left: auto;
 }
 
-.btn-ul a:hover {
-    transform: scale(1.1);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+.btn-ul li:hover {
+    transform: scale(1.05);
+    transition: .5s;
     cursor: pointer;
+}
+
+.btn-ul li:hover a {
+    transition: .5s;
+    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
 }
 
 .btn-ul .state {
