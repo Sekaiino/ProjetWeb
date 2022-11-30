@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../css/style.css" />
-        <link rel="icon" href="../../images/logo-removebg.png" type="img/x-icon" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="icon" href="../../images/logo-removebg.png" type="img/x-icon">
         <title>eWins - Edition tournois</title>
     </head>
     <body>
@@ -42,21 +42,21 @@
                         </select>
                     </label>
                     <label class="edit" for="date-d">
-                        <p>Date de début du tournoi:</p>
-                        <input type="date" name="date-d" id="date-d">
+                        <p>Date et heure de début du tournoi:</p>
+                        <input type="datetime-local" name="date-d" id="date-d">
                     </label>
                     <label class="edit" for="date-f">
-                        <p>Date de fin des inscriptions:</p>
-                        <input type="date" name="date-f" id="date-f">
+                        <p>Date et heure de fin des inscriptions:</p>
+                        <input type="datetime-local" name="date-f" id="date-f">
                     </label>
                     <label class="edit" for="nb">
                         <p>Nombre de participants:</p>
                         <input type="number" name="nb" id="nb" value="2" min="2" max="16">
                     </label>
                     <button type="submit">Soumettre</button>
-                    <section class="option">
+                    <aside class="option">
                         <a href="../delete.php">Supprimer tournoi</a>
-                    </section>
+                    </aside>
                 </form>
             </article>
         </main>
