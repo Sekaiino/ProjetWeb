@@ -107,7 +107,7 @@
 }
 
 .btn-ul button:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
 }
@@ -198,7 +198,7 @@ details button {
 }
 
 details button:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
 }

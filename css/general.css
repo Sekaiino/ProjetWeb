@@ -39,17 +39,18 @@ nav {
     padding: 20px;
 }
 
-nav div a:first-child button {
+nav div .btn:first-child {
     color: white;
     margin-right: 15px;
 }
 
-nav div a:last-child button {
+nav div .btn:last-child {
     color: rgb(73, 46, 144);
     background-color: white;
 }
 
-nav button {
+nav .btn {
+    text-decoration: none;
     background-color: transparent;
     color: #fff;
     font-size: 16px;
@@ -59,8 +60,8 @@ nav button {
     border-radius: 5px;
 }
 
-nav button:hover {
-    transform: scale(110%);
+nav .btn:hover {
+    transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
@@ -85,7 +86,7 @@ nav .nav-ul li img {
     height: 100%;
 }
 
-nav .nav-ul li p {
+nav .nav-ul li h1 {
     font-size: 1.3em;
     color: white;
     -webkit-text-stroke: 1px rgb(73, 46, 144);

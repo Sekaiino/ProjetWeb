@@ -60,7 +60,7 @@
 
 .pp:hover {
     cursor: pointer;
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 #pp::-webkit-file-upload-button {
@@ -129,7 +129,7 @@
 
 #remember:hover {
     cursor: pointer;
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 #main-form button {
@@ -143,14 +143,14 @@
 }
 
 #main-form button:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
     transition: .5s;
 }
 
 .form:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     transition: .5s;
 }
@@ -169,7 +169,7 @@
 }
 
 #main-form article a:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
     color:rgba(255, 255, 255, 1);
 }
 
@@ -200,7 +200,7 @@
 }
 
 .edit input:hover, .edit select:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
     transition: .5s;
@@ -233,7 +233,7 @@ table input[type="number"] {
     border-radius: 3px;
 }
 input[type="number"]:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
     transition: .5s;

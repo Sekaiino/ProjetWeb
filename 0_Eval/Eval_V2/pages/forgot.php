@@ -32,7 +32,7 @@
                     <button type="submit">Recevoir l'e-mail de récupération</button>
                 </form>
                 <div class="option">
-                    <a href="./create.php">Créer un compte ?</a>
+                    <a href="./register.php">Créer un compte ?</a>
                 </div>
             </article>
         </main>

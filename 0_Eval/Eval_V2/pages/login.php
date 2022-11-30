@@ -44,7 +44,7 @@
                 </form>
                 <div class="option">
                     <a href="./forgot.php">Mot de passe oublié ?</a>
-                    <a href="./create.php">Créer un compte ?</a>
+                    <a href="./register.php">Créer un compte ?</a>
                 </div>
             </article>
         </main>
