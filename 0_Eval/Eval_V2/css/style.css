@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Fredoka One", Arial, Helvetica, sans-serif;
-}
+} 
 body {
     padding: 0;
     margin: 0;
@@ -17,6 +17,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+li {
+    list-style: none;
 }
 
 /* NavBar */
@@ -524,15 +527,12 @@ table tr td label {
 }
 
 /* Home */
-#accueil, #accueil div {
+#accueil {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    margin-top: 7%;
-}
-
-#accueil div {
+    margin: 10% auto;
     width: 70%;
     padding: 2.5%;
     border-radius: 5px;
@@ -544,7 +544,7 @@ table tr td label {
 }
 
 #accueil article {
-    margin-bottom: 1%;
+    margin: 0 auto 1% auto;
     width: 90%;
     height: 60%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -563,6 +563,8 @@ table tr td label {
 }
 
 #accueil h2 {
+    width: 40%;
+    margin: 0 auto;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
     margin-bottom: 2.5%;
@@ -595,6 +597,17 @@ table tr td label {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2.5%;
+}
+
+#tournois #main-display h2 {
+    width: 25%;
+    text-align: center;
+    color: white;
+    color: rgb(73, 46, 144);
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(73, 46, 144);
     margin-bottom: 2.5%;
 }
 
@@ -641,7 +654,7 @@ table tr td label {
     padding: 20px 0;
 }
 
-#tournois ul {
+.tournament-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -652,28 +665,25 @@ table tr td label {
     width: 70%;
     margin: 12% auto 2% auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-#tournois .btn-ul div {
-    display: flex;
-    flex-direction: row;
-}
-
-#tournois li {
+.tournament-details li {
     list-style: none;
     margin-bottom: 10px;
     color: rgb(73, 46, 144);
 }
 
-#tournois li span {
+.tournament-details li b {
+    font-weight: lighter;
     color: white;
     -webkit-text-stroke: 1px rgb(73, 46, 144);
 }
 
-.btn-ul button {
+.btn-ul a {
     background-color: transparent;
+    text-decoration: none;
     color: #fff;
     font-size: 16px;
     margin: 2.5% 0;
@@ -685,10 +695,14 @@ table tr td label {
 }
 
 .btn-ul li:first-child {
-    margin-right: 20px;
+    margin-right: 2.5%;
 }
 
-.btn-ul button:hover {
+.btn-ul li:last-child {
+    margin-left: auto;
+}
+
+.btn-ul a:hover {
     transform: scale(1.1);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
@@ -715,33 +729,65 @@ details section {
     transform: translateX(-15%);
 }
 
-#player {
-    width: 35%;
-    margin-right: 5%;
+#details {
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+}
+
+#details h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+    color: #fff;
+    margin-top: 5%;
+}
+
+#details h3 {
+    font-size: 1em;
+    -webkit-text-stroke: 1px rgb(73, 46, 144);
+    color: #fff;
+    padding-bottom: 5px;
+    text-decoration: underline rgb(73, 46, 144) 2px;
+    margin-bottom: 5%;
+}
+
+.player {
+    width: 20%;
+    margin: 0 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#player h3 {
-    font-size: 1em;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-    color: #fff;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgb(73, 46, 144);
-    margin-bottom: 5px;
+
+.player .tournament-details {
+    margin-top: 10%;
 }
 
-#tree {
+.tree {
     width: 60%;
-    margin: 10% auto 10% 10%;
+    margin: 5% auto 10% 5%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#tree .tree-column {
+.tree h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.tree .tree-column {
     height: 30vh;
     margin: 0 5%;
     display: flex;
@@ -749,7 +795,7 @@ details section {
     justify-content: space-evenly;
 }
 
-#tree .tree-column:last-child p {
+.tree .tree-column:last-child p {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -758,7 +804,7 @@ details section {
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
 }
 
-#tree .tree-column p {
+.tree .tree-column p {
     text-align: center;
     width: 140%;
     padding: 2px 5px;

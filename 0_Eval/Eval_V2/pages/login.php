@@ -42,10 +42,10 @@
                     >
                     <button type="submit">Se connecter</button>
                 </form>
-                <div class="option">
+                <section class="option">
                     <a href="./forgot.php">Mot de passe oublié ?</a>
                     <a href="./register.php">Créer un compte ?</a>
-                </div>
+                </section>
             </article>
         </main>
 

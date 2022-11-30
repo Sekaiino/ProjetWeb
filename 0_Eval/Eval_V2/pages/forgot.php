@@ -31,9 +31,9 @@
                     /></label>
                     <button type="submit">Recevoir l'e-mail de récupération</button>
                 </form>
-                <div class="option">
+                <section class="option">
                     <a href="./register.php">Créer un compte ?</a>
-                </div>
+                </section>
             </article>
         </main>
 
