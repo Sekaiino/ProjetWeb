@@ -151,34 +151,42 @@ nav .nav-ul li a:hover::before {
     width: 100%;
     filter: drop-shadow(0 0 25px #aedaf2);
 }
-
 nav .user-profile {
     position: absolute;
     text-align: center;
-    left: 87.5%;
+    left: 86%;
     margin-right: 5%;
     padding: 10px;
-    top: 10%;
+    top: 35%;
     background-color: transparent;
     border-radius: 5px;
     height: 30vh;
-    width: 10%;
+    width: 12.5%;
 }
 nav .user-profile[open] {
     background-color: rgba(73, 46, 144, 1);
 }
+nav .user-profile[open] #arrow {
+    transform: rotate(90deg);
+}
 nav .user-profile summary {
+    color: #fff;
     position: relative;
-    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+nav .user-profile summary p {
+    margin: 0 5%;
 }
 nav .user-profile summary:hover {
     cursor: pointer;
 }
-
 nav .user-profile img {
     border-radius: 50%;
     width: 50%;
     height: 50%;
+    margin: 0 auto;
 }
 nav .user-profile ul {
     position: relative;
@@ -194,6 +202,11 @@ nav .user-profile ul li {
     list-style: none;
     padding: 2.5%;
     margin: 5% 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 nav .user-profile ul li p {
     color: #fff;
@@ -203,6 +216,7 @@ nav .user-profile ul li p {
 nav .user-profile ul li a {
     color: #fff;
     text-decoration: none;
+    margin-left: 5px;
 }
 nav .user-profile ul li a:hover {
     color: #aedaf2;
@@ -392,7 +406,6 @@ footer {
 #name input:last-child {
     margin-left: 5%;
 }
-
 
 .form {
     width: 61.5%;
@@ -673,14 +686,6 @@ table tr td label {
     align-items: center;
 }
 
-#tournois .btn-ul {
-    width: 70%;
-    margin: 12% auto 2% auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
 .tournament-details li {
     list-style: none;
     margin-bottom: 10px;
@@ -693,7 +698,25 @@ table tr td label {
     -webkit-text-stroke: 1px rgb(73, 46, 144);
 }
 
-.btn-ul a {
+#tournois .btn-ul {
+    width: 70%;
+    margin: 12% auto 2% auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tournament-btn-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    margin: 10% 0;
+}
+
+.btn-ul a, .tournament-btn-ul a {
     background-color: transparent;
     text-decoration: none;
     color: #fff;
@@ -706,21 +729,21 @@ table tr td label {
     transition: 0.5s;
 }
 
-.btn-ul li:first-child {
+.btn-ul li:first-child, .tournament-btn-ul li:first-child {
     margin-right: 2.5%;
 }
 
-.btn-ul li:last-child {
+.btn-ul li:nth-child(3) {
     margin-left: auto;
 }
 
-.btn-ul li:hover {
+.btn-ul li:hover, .tournament-btn-ul li:hover {
     transform: scale(1.05);
     transition: .5s;
     cursor: pointer;
 }
 
-.btn-ul li:hover a {
+.btn-ul li:hover a, .tournament-btn-ul li:hover a {
     transition: .5s;
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
 }

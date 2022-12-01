@@ -30,15 +30,24 @@
 
         <?php elseif($a == TRUE): ?>
             <details class="user-profile">
-                <summary><img src=<?php echo $img . "/images/pp.png" ?> alt="profile picture"></summary>
+                <summary>
+                    <span id="arrow" class="material-symbols-outlined">arrow_forward_ios</span>
+                    <span class="material-symbols-outlined">settings</span>
+                </summary>
                 <ul>
-                    <li><p>Vullo Enzo</p></li>
-                    <li><a href=<?php echo $pages . "/edit-profile.php" ?>>Editer profil</a></li>
-                    <li><a href="">Déconnexion</a></li>
+                    <li><img src="./images/pp.png" alt="profile picture"></li>
+                    <li>
+                        <span class="material-symbols-outlined">manage_accounts</span>
+                        <a href="#">Editer profil</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">logout</span>
+                        <a href="">Déconnexion</a>
+                    </li>
                 </ul>
             </details>
         <?php endif; ?>
-        
+
     </nav>
 
     <nav>
@@ -74,11 +83,21 @@
 
         <?php elseif($a == TRUE): ?>
             <details class="user-profile">
-                <summary><img src=<?php echo $img . "/images/pp.png" ?> alt="profile picture"></summary>
+                <summary>
+                    <span id="arrow" class="material-symbols-outlined">arrow_forward_ios</span>
+                    <p>Enzo Vullo</p>
+                    <span class="material-symbols-outlined">settings</span>
+                </summary>
                 <ul>
-                    <li><p>Vullo Enzo</p></li>
-                    <li><a href=<?php echo $pages . "/edit-profile.php" ?>>Editer profil</a></li>
-                    <li><a href="">Déconnexion</a></li>
+                    <li><img src="../images/pp.png" alt="profile picture"></li>
+                    <li>
+                        <span class="material-symbols-outlined">manage_accounts</span>
+                        <a href="./edit-profile.php">Editer profil</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">logout</span>
+                        <a href="">Déconnexion</a>
+                    </li>
                 </ul>
             </details>
         <?php endif; ?>

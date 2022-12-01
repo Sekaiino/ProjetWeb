@@ -46,7 +46,10 @@
                             <li><b>Statut:</b> ouvert</li>
                             <li><b>Date de fin des inscriptions:</b> O2 Avril 2022</li>
                             <li><b>Date d'ouverture du tournoi:</b> 07 Avril 2022</li>
-                            <li><button>Rejoindre</button></li>
+                        </ul>
+                        <ul class="tournament-btn-ul">
+                            <li><a href="#">Rejoindre</a></li>
+                            <li><a href="./tournament-details.php">Détails du tournoi</a></li>
                         </ul>
                     </details>
                 </article>
@@ -60,7 +63,10 @@
                             <li><b>Statut:</b> ouvert</li>
                             <li><b>Date de fin des inscriptions:</b> O2 Avril 2022</li>
                             <li><b>Date d'ouverture du tournoi:</b> 07 Avril 2022</li>
-                            <li><button>Rejoindre</button></li>
+                        </ul>
+                        <ul class="tournament-btn-ul">
+                            <li><a href="#">Rejoindre</a></li>
+                            <li><a href="./tournament-details.php">Détails du tournoi</a></li>
                         </ul>
                     </details>
                 </article>
@@ -74,7 +80,10 @@
                             <li><b>Statut:</b> ouvert</li>
                             <li><b>Date de fin des inscriptions:</b> O2 Avril 2022</li>
                             <li><b>Date d'ouverture du tournoi:</b> 07 Avril 2022</li>
-                            <li><button>Rejoindre</button></li>
+                        </ul>
+                        <ul class="tournament-btn-ul">
+                            <li><a href="#">Rejoindre</a></li>
+                            <li><a href="./tournament-details.php">Détails du tournoi</a></li>
                         </ul>
                     </details>
                 </article>
@@ -88,7 +97,10 @@
                             <li><b>Statut:</b> ouvert</li>
                             <li><b>Date de fin des inscriptions:</b> O2 Avril 2022</li>
                             <li><b>Date d'ouverture du tournoi:</b> 07 Avril 2022</li>
-                            <li><button>Rejoindre</button></li>
+                        </ul>
+                        <ul class="tournament-btn-ul">
+                            <li><a href="#">Rejoindre</a></li>
+                            <li><a href="./tournament-details.php">Détails du tournoi</a></li>
                         </ul>
                     </details>
                 </article>
@@ -102,7 +114,10 @@
                             <li><b>Statut:</b> ouvert</li>
                             <li><b>Date de fin des inscriptions:</b> O2 Avril 2022</li>
                             <li><b>Date d'ouverture du tournoi:</b> 07 Avril 2022</li>
-                            <li><button>Rejoindre</button></li>
+                        </ul>
+                        <ul class="tournament-btn-ul">
+                            <li><a href="#">Rejoindre</a></li>
+                            <li><a href="./tournament-details.php">Détails du tournoi</a></li>
                         </ul>
                     </details>
                 </article>
