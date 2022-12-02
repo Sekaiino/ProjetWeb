@@ -40,12 +40,12 @@
                     </label>
                     <label for="message">
                         <b>Votre message<b class="red">*</b></b>
-                        <textarea>
+                        <textarea
                             class="form"
                             id="message"
                             cols="30"
                             rows="10"
-                            required
+                            required>
                         </textarea>
                     </label>
                     <button type="submit">Envoyer</button>
