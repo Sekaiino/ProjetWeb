@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../images/logo-removebg.png" type="img/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
         <title>eWins - Contact</title>
     </head>
     <body>
@@ -21,26 +22,31 @@
             <article>
                 <h3>Contactez-nous</h3>
                 <form>
-                    <label for="username"
-                        ><input
+                    <label for="email">
+                        <b>Votre adresse email<b class="red">*</b></b>
+                        <input
                             class="form"
-                            id="username"
+                            id="email"
                             type="email"
                             required
-                            placeholder="e-mail"
-                    ></label>
-                    <label for="subject"
-                        ><input class="form" type="text" required placeholder="Intitulé du message"
-                    ></label>
+                            placeholder="ex: xyz@yoursite.com">
+                    </label>
+                    <label for="subject">
+                        <b>Sujet de votre message<b class="red">*</b></b>
+                        <input 
+                            class="form" 
+                            type="text" 
+                            required>
+                    </label>
                     <label for="message">
+                        <b>Votre message<b class="red">*</b></b>
                         <textarea
                             class="form"
                             id="message"
                             cols="30"
                             rows="10"
                             required
-                            placeholder="Votre message"
-                        ></textarea>
+                        </textarea>
                     </label>
                     <button type="submit">Envoyer</button>
                 </form>

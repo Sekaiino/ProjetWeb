@@ -336,11 +336,13 @@ footer {
 
 #main-form form label {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     font-size: 0.9em;
-    margin-top: 5px;
-    /* color: rgba(0, 0, 0, 0.6); */
+    margin-top: 2.5%;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 #main-form article h3 {
@@ -416,8 +418,8 @@ footer {
 }
 
 #last {
-    color: #fff;
-    padding: 5% 0;
+    margin: 2.5% 0;
+    flex-direction: row !important;
 }
 
 #last:hover {
@@ -444,6 +446,17 @@ footer {
     padding: 10px 15px;
     border: 1px solid #fff;
     border-radius: 5px;
+}
+
+#main-form label b {
+    align-self: flex-start;
+    margin: 2.5% 0 0 20%;
+    width: 100%;
+}
+
+#main-form label .red {
+    margin-left: 0;
+    color: red;
 }
 
 #main-form button:hover {
@@ -487,70 +500,69 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 2.5%;
-}
-.edit p {
-    margin-right: auto;
-    margin-left: 5%;
+    margin-left: 20%;
     color: rgba(73, 46, 144, 1);
 }
-.edit input, .edit select {
+.edit select {
     color: rgba(0, 0, 0, 0.6);
-    margin-right: 5%;
+    margin-right: 20%;
+    margin-left: auto;
     width: 23%;
     padding: 5px 7.5px;
     border: none;
     border-radius: 3px;
 }
-
-.edit input:hover, .edit select:hover {
+.edit select:hover {
     transform: scale(1.05);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
     transition: .5s;
-}
-#nb:hover {
-    cursor: text;
 }
 
 /* Edit score */
-table tr {
+#score {
+    width: 90%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 61.5%;
-    margin: 0 auto;
-}
-table tr th {
-    width: 50%;
-    margin: 5% auto 2.5% auto;
-}
-table tr td {
-    width: 50%;
-    margin-bottom: 2.5%;
-}
-table input[type="number"] {
-    margin: 0 10%;
-    width: 50%;
-    padding: 2px;
-    border: none;
-    border-radius: 3px;
-}
-input[type="number"]:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    cursor: pointer;
-    transition: .5s;
-}
-table tr td label {
-    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    color:rgba(73, 46, 144, 1);
+    color: rgb(73, 46, 144);
+}
+#score h3, h4 {
+    width: 100%;
+    text-align: center;
+}
+#score section {
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#score section select, #score section label {
+    margin: 10% 0;
+    width: 45%;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#score input[type="number"] {
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    padding: 2px 5px;
+    border: none;
 }
 .win {
-    width: 55%;
+    margin-top: 10%;
 }
-
+.win label {
+    width: 100%;
+}
+.win label input {
+    margin-right: 7.5%;
+}
 /* Home */
 #accueil {
     display: flex;

@@ -89,7 +89,7 @@
                     <span class="material-symbols-outlined">settings</span>
                 </summary>
                 <ul>
-                    <li><img src="../images/pp.png" alt="profile picture"></li>
+                    <li><img src=<?php echo $img . "/images/pp.png"; ?> alt="profile picture"></li>
                     <li>
                         <span class="material-symbols-outlined">manage_accounts</span>
                         <a href="./edit-profile.php">Editer profil</a>

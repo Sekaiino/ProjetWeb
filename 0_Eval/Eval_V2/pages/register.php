@@ -31,43 +31,59 @@
                     </label>
                     <input type="file" name="pp" id="pp" accept=".png, .jpg, .jpeg">
                     <aside id="name">
-                        <label for="nom"
-                            ><input class="form" id="nom" type="text" required placeholder="nom"></label>
-                        <label for="prenom"
-                            ><input
+                        <label for="nom">
+                            <b>Votre nom<b class="red">*</b></b>
+                            <input 
+                                class="form" 
+                                id="nom" 
+                                type="text" 
+                                required 
+                                placeholder="ex: Doe">
+                        </label>
+                        <label for="prenom">
+                            <b>Votre prénom<b class="red">*</b></b>
+                            <input
                                 class="form"
                                 id="prenom"
                                 type="text"
                                 required
-                                placeholder="prenom"
+                                placeholder="ex: John"
                         ></label>
                     </aside>
-                    <label for="username"
-                        ><input
+                    <label for="email"
+                        ><b>Votre email<b class="red">*</b></b><input
                             class="form"
-                            id="username"
+                            id="email"
                             type="email"
                             required
-                            placeholder="e-mail"
+                            placeholder="ex: xyz@yoursite.com"
                     ></label>
-                    <label for="pseudo"
-                        ><input class="form" id="pseudo" type="text" required placeholder="pseudo"
+                    <label for="pseudo">
+                        <b>Votre pseudo<b class="red">*</b></b>
+                        <input 
+                            class="form" 
+                            id="pseudo" 
+                            type="text" 
+                            required 
+                            placeholder="ex: j.doe07"
                     ></label>
-                    <label for="password"
-                        ><input
+                    <label for="password">
+                        <b>Votre mot de passe<b class="red">*</b></b>
+                        <input
                             class="form"
                             id="password"
                             type="password"
                             required
-                            placeholder="mot de passe"
+                            placeholder="****"
                     ></label>
-                    <label for="confirmPassword"
-                        ><input
+                    <label for="confirmPassword">
+                        <b>Confirmer votre mot de passe<b class="red">*</b></b>
+                        <input
                             class="form"
                             id="confirmPassword"
                             type="password"
                             required
-                            placeholder="confirmer mot de passe"
+                            placeholder="****"
                     ></label>
                     <button type="submit">Créer</button>
                 </form>

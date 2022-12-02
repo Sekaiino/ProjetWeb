@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../images/logo-removebg.png" type="img/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
         <title>eWins - S'identifier</title>
     </head>
     <body>
@@ -21,25 +22,28 @@
             <article>
                 <h3>Identifiez-vous</h3>
                 <form>
-                    <label for="username"
-                        ><input
+                    <label for="email">
+                        <b>Votre adresse e-mail<b class="red">*</b></b>
+                        <input
                             class="form"
-                            id="username"
+                            id="email"
                             type="email"
                             required
                             placeholder="e-mail"
                     ></label>
-                    <label for="password"
-                        ><input
+                    <label for="password">
+                        <b>Votre mot de passe<b class="red">*</b></b>
+                        <input
                             class="form"
                             id="password"
                             type="password"
                             required
                             placeholder="mot de passe"
                     ></label>
-                    <label id="last" for="remember"
-                        ><input id="remember" type="checkbox"> Se souvenir de moi</label
-                    >
+                    <label id="last" for="remember">
+                        <input id="remember" type="checkbox"> 
+                        Se souvenir de moi
+                    </label>
                     <button type="submit">Se connecter</button>
                 </form>
                 <aside class="option">
