@@ -24,7 +24,7 @@
                 <form>
                     <p>Êtes-vous sûr de vouloir supprimer ce tournoi ?<br><br>Si oui écrivez "supprimer" ci-dessous et confirmer</p>
                     <label for="delete"><input class="form" type="text" name="delete" id="delete" placeholder="supprimer" required></label>
-                    <button type="submit">Supprimer</button>
+                    <button class="delete-btn" type="submit">Supprimer</button>
                     <section class="option">
                         <a href="./admin/edit-tournament.php">Annuler</a>
                     </section>

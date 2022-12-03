@@ -23,7 +23,7 @@
                 <h3>Edition des scores</h3>
                 <form>
                     <label class="edit" for="tournament">
-                        Sélectionnez le tournoi à modifier:
+                        <b>Sélectionnez le tournoi à modifier:</b>
                         <select name="tournament" id="tournament">
                             <option value="tournoi-1">Tournoi 1</option>
                             <option value="tournoi-2">Tournoi 2</option>

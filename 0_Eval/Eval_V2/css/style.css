@@ -448,11 +448,11 @@ footer {
     border-radius: 5px;
 }
 
-#main-form label b {
+/* #main-form label b {
     align-self: flex-start;
     margin: 2.5% 0 0 20%;
     width: 100%;
-}
+} */
 
 #main-form label .red {
     margin-left: 0;
@@ -496,27 +496,50 @@ footer {
 }
 
 /* Select menu */
-.edit {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 20%;
-    color: rgba(73, 46, 144, 1);
-}
-.edit select {
+.edit select, input[type="datetime-local"] {
     color: rgba(0, 0, 0, 0.6);
-    margin-right: 20%;
-    margin-left: auto;
-    width: 23%;
+    margin: 0 auto;
+    width: 50%;
     padding: 5px 7.5px;
     border: none;
     border-radius: 3px;
+    margin-bottom: 2.5%;
 }
-.edit select:hover {
+#nb {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px 7.5px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 5%;
+}
+.edit select:hover, input[type="datetime-local"]:hover, #nb:hover {
     transform: scale(1.05);
     box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
     cursor: pointer;
     transition: .5s;
+}
+#sub-del {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-btn {
+    padding: 10px 15px;
+    border: 1px solid red !important;
+    border-radius: 4px;
+    color: red !important;
+    text-decoration: none;
+}
+.delete-btn:hover {
+    transform: scale(1.1);
+    color: white !important;
+    background-color: red !important;
+    transition: .5s ease-in-out !important;
+    text-decoration: underline white !important;
+    box-shadow: none !important;
 }
 
 /* Edit score */

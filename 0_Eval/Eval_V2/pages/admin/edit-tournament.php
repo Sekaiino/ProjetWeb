@@ -18,12 +18,12 @@
             include("../../inc/header.inc.php") 
         ?>
 
-        <main id="main-form">
+<main id="main-form">
             <article>
                 <h3>Modification des tournois</h3>
                 <form>
                     <label class="edit" for="tournament">
-                        <p>Sélectionner le tournoi à modifier:</p>
+                        <b>Sélectionner le tournoi à modifier:</b>
                         <select name="tournament" id="tournament">
                             <option value="tournoi-1">Tournoi 1</option>
                             <option value="tournoi-2">Tournoi 2</option>
@@ -33,7 +33,7 @@
                         </select>
                     </label>
                     <label class="edit" for="sport">
-                        <p>Sélectionner le sport concerné par ce tournoi:</p>
+                        <b>Sélectionner le sport concerné par ce tournoi:</b>
                         <select name="sport" id="sport">
                             <option value="belote">Belote</option>
                             <option value="tennis">Tennis</option>
@@ -43,20 +43,20 @@
                         </select>
                     </label>
                     <label class="edit" for="date-d">
-                        <p>Date et heure de début du tournoi:</p>
+                        <b>Date et heure de début du tournoi:</b>
                         <input type="datetime-local" name="date-d" id="date-d">
                     </label>
                     <label class="edit" for="date-f">
-                        <p>Date et heure de fin des inscriptions:</p>
+                        <b>Date et heure de fin des inscriptions:</b>
                         <input type="datetime-local" name="date-f" id="date-f">
                     </label>
                     <label class="edit" for="nb">
-                        <p>Nombre de participants:</p>
+                        <b>Nombre de participants:</b>
                         <input type="number" name="nb" id="nb" value="2" min="2" max="16">
                     </label>
-                    <button type="submit">Soumettre</button>
-                    <aside class="option">
-                        <a href="../delete.php">Supprimer tournoi</a>
+                    <aside id="sub-del">
+                        <button type="submit">Modifier</button>
+                        <a class="delete-btn" href="../delete.php">Supprimer</a>
                     </aside>
                 </form>
             </article>
