@@ -31,31 +31,26 @@
                         modifier votre photo de profil
                     </label>
                     <input type="file" name="pp" id="pp" accept=".png, .jpg, .jpeg">
-                    <div id="name">
-                        <label for="nom"
-                            ><input class="form" id="nom" type="text" placeholder="nom"
-                        ></label>
-                        <label for="prenom"
-                            ><input class="form" id="prenom" type="text" placeholder="prenom"
-                        ></label>
-                    </div>
-                    <label for="pseudo"
-                        ><input class="form" id="pseudo" type="text" placeholder="pseudo"
-                    ></label>
-                    <label for="password"
-                        ><input
+                    <label for="pseudo">
+                        <b>Votre pseudo</b>
+                        <input class="form" id="pseudo" type="text" placeholder="ex: j.doe07">
+                    </label>
+                    <label for="password">
+                        <b>Nouveau mot de passe</b>
+                        <input
                             class="form"
                             id="password"
                             type="password"
-                            placeholder="mot de passe"
-                    ></label>
-                    <label for="confirmPassword"
-                        ><input
+                            placeholder="ex: ****">
+                    </label>
+                    <label for="confirmPassword">
+                        <b>Confirmer le nouveau mot de passe</b>
+                        <input
                             class="form"
                             id="confirmPassword"
                             type="password"
-                            placeholder="confirmer mot de passe"
-                    ></label>
+                            placeholder="ex: ****">
+                    </label>
                     <button type="submit">Confirmer</button>
                 </form>
             </article>
