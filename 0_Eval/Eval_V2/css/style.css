@@ -1,892 +1,782 @@
-/* Font and background */
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One");
-
+@import url(https://fonts.googleapis.com/css2?family=Fredoka+One);
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Fredoka One", Arial, Helvetica, sans-serif;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fredoka One", Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: rgba(73, 46, 144, 1);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(150,720,394)'%3E%3Cstop offset='0' stop-color='%23AEDAF2'/%3E%3Cstop offset='1' stop-color='%23E45A84'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-color: rgb(73, 46, 144);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(150,720,394)'%3E%3Cstop offset='0' stop-color='%23AEDAF2'/%3E%3Cstop offset='1' stop-color='%23E45A84'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-li {
-    list-style: none;
+body li {
+  list-style: none;
 }
-
-/* NavBar */
-.nav-tel {
-    display: none;
+body .nav-tel {
+  display: none;
 }
-
-nav {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(73, 46, 144, 0.7);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(73, 46, 144, 1);
-    padding: 20px;
+body nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(73, 46, 144, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgb(73, 46, 144);
+  padding: 20px;
 }
-
-nav .connect {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
+body nav .nav-ul {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
-
-nav .connect li:first-child .btn {
-    color: white;
-    margin-right: 15px;
+body nav .nav-ul li {
+  position: relative;
+  list-style: none;
+  margin-right: 5%;
 }
-
-nav .connect li:last-child .btn {
-    color: rgb(73, 46, 144);
-    background-color: white;
+body nav .nav-ul li img {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-
-nav .btn {
-    text-decoration: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    margin: 7.5% 0;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
+body nav .nav-ul li h1 {
+  font-size: 1.3em;
+  color: white;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+  display: block;
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  animation: slidein 1.5s;
 }
-
-nav .connect li:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-nav .connect li:hover .btn {
-    transition: 0.5s;
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    cursor: pointer;
-}
-
-nav .nav-ul {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-nav .nav-ul li {
-    position: relative;
-    list-style: none;
-    margin-right: 5%;
-}
-
-nav .nav-ul li img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-nav .nav-ul li h1 {
-    font-size: 1.3em;
-    color: white;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-    display: block;
-    position: absolute;
-    left: 10%;
-    top: 60%;
-    animation: slidein 1.5s;
-}
-
 @keyframes slidein {
-    0% {
-        top: -100%;
-    }
-    70% {
-        top: 100%;
-    }
-    100% {
-        top: 60%;
-    }
-}
-
-nav .nav-ul li a {
-    position: relative;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.5em;
-    line-height: 1em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(175, 175, 175, 0.9);
-}
-
-nav .nav-ul li a::before {
-    content: attr(data-text);
-    position: absolute;
-    color: transparent;
-    width: 0%;
-    overflow: hidden;
-    transition: 1s;
-    border-right: 2px solid #aedaf2;
-    -webkit-text-stroke: 1px #aedaf2;
-}
-
-nav .nav-ul li a:hover::before {
-    width: 100%;
-    filter: drop-shadow(0 0 25px #aedaf2);
-}
-nav .user-profile {
-    position: absolute;
-    text-align: center;
-    left: 86%;
-    margin-right: 5%;
-    padding: 10px;
-    top: 35%;
-    background-color: transparent;
-    border-radius: 5px;
-    height: 30vh;
-    width: 12.5%;
-}
-nav .user-profile[open] {
-    background-color: rgba(73, 46, 144, 1);
-}
-nav .user-profile[open] #arrow {
-    transform: rotate(90deg);
-}
-nav .user-profile summary {
-    color: #fff;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-nav .user-profile summary p {
-    margin: 0 5%;
-}
-nav .user-profile summary:hover {
-    cursor: pointer;
-}
-nav .user-profile img {
-    border-radius: 50%;
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-}
-nav .user-profile ul {
-    position: relative;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 10vw;
-    padding: 2.5% 0;
-    border-radius: 0 0 4px 4px;
-}
-nav .user-profile ul li {
-    list-style: none;
-    padding: 2.5%;
-    margin: 5% 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-nav .user-profile ul li p {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: bold;
-}
-nav .user-profile ul li a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 5px;
-}
-nav .user-profile ul li a:hover {
-    color: #aedaf2;
-    font-style: italic;
-}
-
-@media only screen and (max-width: 600px) {
-    nav {
-        display: none;
-    }
-    .nav-tel {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .nav-tel details {
-        width: 45%;
-        position: relative;
-    }
-    .nav-tel details summary {
-        list-style: none;
-        position: relative;
-    }
-    .nav-tel details summary img {
-        width: 70%;
-    }
-    .nav-tel details summary p {
-        font-size: 1.3em;
-        color: white;
-        -webkit-text-stroke: 1px rgb(73, 46, 144);
-        display: block;
-        position: absolute;
-        left: 17.5%;
-        top: 65%;
-        animation: slidein 1.5s;
-    }
-    .nav-tel details .nav-ul {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 5%;
-    }
-    .nav-tel details .nav-ul li {
-        margin-bottom: 5%;
-    }
-    .nav-tel div {
-        margin-top: 4%;
-        width: 45%;
-    }
-    .nav-tel div a {
-        width: 70%;
-    }
-    .nav-tel div a button {
-        margin: 2.5% 0;
-        width: 100%;
-        font-size: 14px;
-    }
-    .nav-tel .user-profile {
-        width: 45%;
-        left: 50%;
-        top: 25%;
-    }
-    .nav-tel .user-profile img {
-        width: 40%;
-    }
-}
-
-/* Footer */
-footer {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-    width: 100%;
-    color: white;
-    background-color: rgba(73, 46, 144, 0.7);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border-top: 1px solid rgba(73, 46, 144, 1);
-}
-
-/* Forms */
-#main-form {
-    padding: 5% 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-#main-form article {
-    margin-bottom: 2.5%;
-    width: 35%;
-    height: 60%;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    margin-top: 7.5%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#main-form article form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-form form label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 0.9em;
-    margin-top: 2.5%;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-#main-form article h3 {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    font-size: 1.5em;
-    margin: 15% 0 7.5% 0;
-}
-
-.pp {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.pp span {
-    margin-right: 2%;
-}
-
-.pp:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#pp::-webkit-file-upload-button {
-    display: none;
-}
-
-#pp {
-    width: 30%;
-    margin: 0 auto;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 5%;
-}
-
-#name {
-    display: flex;
-    flex-direction: row;
-    width: 65%
-}
-
-#name label:first-child {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#name label:last-child {
-    width: 50%;
-    justify-content: flex-start;
-}
-
-#name input {
-    width: 90%;
-}
-
-.form {
-    width: 61.5%;
-    padding: 5px 7.5px;
-    margin: 2.5% 0 1% 0;
-    border: none;
-    border-radius: 3px;
-}
-
-#last {
-    margin: 2.5% 0;
-    flex-direction: row !important;
-}
-
-#last:hover {
-    cursor: pointer;
-}
-
-#remember {
-    justify-self: flex-start;
-    align-self: center;
-    border: none;
-    margin-right: 10px;
-}
-
-#remember:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#main-form button {
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    margin: 7.5% 0;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-#main-form label .red {
-    margin-left: 0;
-    color: red;
-}
-
-#main-form button:hover {
-    transform: scale(1.1);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.form:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    transition: .5s;
-}
-
-#main-form article .option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 10% 0;
-}
-
-.option a {
-    color:rgba(125, 125, 125, 0.9);
-    font-size: 0.75em;
-    margin-top: 10px;
-}
-
-#main-form article a:hover {
-    transform: scale(1.05);
-    color:rgba(255, 255, 255, 1);
-}
-
-#main-form p {
-    color: rgba(73, 46, 144, 1);
-    text-align: center;
-}
-
-/* Select menu */
-.edit select, input[type="datetime-local"] {
-    color: rgba(0, 0, 0, 0.6);
-    margin: 0 auto;
-    width: 50%;
-    padding: 5px 7.5px;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 2.5%;
-}
-#nb {
-    color: rgba(0, 0, 0, 0.6);
-    padding: 5px 7.5px;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 5%;
-}
-.edit select:hover, input[type="datetime-local"]:hover, #nb:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    cursor: pointer;
-    transition: .5s;
-}
-#sub-del {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.delete-btn {
-    padding: 10px 15px;
-    border: 1px solid red !important;
-    border-radius: 4px;
-    color: red !important;
-    text-decoration: none;
-}
-.delete-btn:hover {
-    transform: scale(1.1);
-    color: white !important;
-    background-color: red !important;
-    transition: .5s ease-in-out !important;
-    text-decoration: underline white !important;
-    box-shadow: none !important;
-}
-
-/* Edit score */
-#score {
-    width: 90%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: rgb(73, 46, 144);
-}
-#score h3, h4 {
-    width: 100%;
-    text-align: center;
-}
-#score section {
-    width: 45%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-#score section select, #score section label {
-    margin: 10% 0;
-    width: 45%;
-    padding: 2px 5px;
-    border: none;
-    border-radius: 4px;
-    color: rgba(0, 0, 0, 0.6);
-}
-#score input[type="number"] {
-    border-radius: 4px;
-    color: rgba(0, 0, 0, 0.6);
-    width: 50%;
-    padding: 2px 5px;
-    border: none;
-}
-.win {
-    margin-top: 10%;
-}
-.win label {
-    width: 100%;
-}
-.win label input {
-    margin-right: 7.5%;
-}
-/* Home */
-#accueil {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: 10% auto;
-    width: 70%;
-    padding: 2.5%;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 2.5%;
-}
-
-#accueil article {
-    margin: 0 auto 1% auto;
-    width: 90%;
-    height: 60%;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#accueil h2, h3 {
-    color: white;
-    -webkit-text-stroke: 0.5px rgb(73, 46, 144);
-}
-
-#accueil h2 {
-    width: 40%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    margin-bottom: 2.5%;
-}
-
-#accueil h3 {
-    align-self: flex-start;
-    margin: 20px 0 0 20px;
-}
-
-#accueil p {
-    color: rgb(73, 46, 144);
-    text-align: justify;
-    margin: 20px;
-}
-
-/* Tournament */
-#tournois {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#tournois #main-display {
-    width: 70%;
-    padding: 2.5%;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 2.5%;
-}
-
-#tournois #main-display h2 {
-    width: 25%;
-    text-align: center;
-    color: white;
-    color: rgb(73, 46, 144);
-    margin: 0 auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(73, 46, 144);
-    margin-bottom: 2.5%;
-}
-
-#tournois details[open] summary ~ * {
-    animation: sweep 0.5s ease-in-out;
+  0% {
+    top: -100%;
+  }
+  70% {
+    top: 100%;
+  }
+  100% {
+    top: 60%;
+  }
+}
+body nav .nav-ul li a {
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(175, 175, 175, 0.9);
+}
+body nav .nav-ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: transparent;
+  width: 0%;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 2px solid #aedaf2;
+  -webkit-text-stroke: 1px #aedaf2;
+}
+body nav .nav-ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px #aedaf2);
+}
+body nav .connect {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+body nav .connect .btn {
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin: 7.5% 0;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+body nav .connect li:first-child .btn {
+  color: white;
+  margin-right: 15px;
+}
+body nav .connect li:last-child .btn {
+  color: rgb(73, 46, 144);
+  background-color: white;
+}
+body nav .connect li:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+body nav .connect li:hover .btn {
+  transition: 0.5s;
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  cursor: pointer;
+}
+body nav .user-profile {
+  position: absolute;
+  text-align: center;
+  left: 86%;
+  margin-right: 5%;
+  padding: 10px;
+  top: 35%;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 30vh;
+  width: 12.5%;
+}
+body nav .user-profile[open] {
+  background-color: rgb(73, 46, 144);
+}
+body nav .user-profile[open] #arrow {
+  transform: rotate(90deg);
+}
+body nav .user-profile summary {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+body nav .user-profile summary p {
+  margin: 0 5%;
+}
+body nav .user-profile summary:hover {
+  cursor: pointer;
+}
+body nav .user-profile ul {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 10vw;
+  padding: 2.5% 0;
+  border-radius: 0 0 4px 4px;
+}
+body nav .user-profile ul li {
+  list-style: none;
+  padding: 2.5%;
+  margin: 5% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+body nav .user-profile ul li img {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+body nav .user-profile ul li p {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+body nav .user-profile ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+body nav .user-profile ul li a:hover {
+  color: #aedaf2;
+  font-style: italic;
+}
+body #main-form {
+  padding: 5% 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body #main-form article {
+  margin-bottom: 2.5%;
+  width: 35%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-top: 7.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body #main-form article form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #main-form article form .pp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  color: rgba(0, 0, 0, 0.6);
+}
+body #main-form article form .pp:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body #main-form article form .pp span {
+  margin-right: 2%;
+}
+body #main-form article form #pp {
+  width: 30%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5%;
+}
+body #main-form article form #pp::-webkit-file-upload-button {
+  display: none;
+}
+body #main-form article form #name {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+}
+body #main-form article form #name label:first-child {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+body #main-form article form #name label:last-child {
+  width: 50%;
+  justify-content: flex-start;
+}
+body #main-form article form #name input {
+  width: 90%;
+}
+body #main-form article form label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.9em;
+  margin-top: 2.5%;
+  color: rgba(0, 0, 0, 0.6);
+}
+body #main-form article form label .form {
+  width: 61.5%;
+  padding: 5px 7.5px;
+  margin: 2.5% 0 1% 0;
+  border: none;
+  border-radius: 3px;
+}
+body #main-form article form label .form:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  transition: 0.5s;
+}
+body #main-form article form #last {
+  margin: 2.5% 0;
+  flex-direction: row !important;
+}
+body #main-form article form #last:hover {
+  cursor: pointer;
+}
+body #main-form article form #last #remember {
+  justify-self: flex-start;
+  align-self: center;
+  border: none;
+  margin-right: 10px;
+}
+body #main-form article form #last #remember:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body #main-form article h3 {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 1.5em;
+  margin: 15% 0 7.5% 0;
+}
+body #main-form button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin: 7.5% 0;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+body #main-form button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #main-form article .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 10% 0;
+}
+body #main-form article .option a {
+  color: rgba(125, 125, 125, 0.9);
+  font-size: 0.75em;
+  margin-top: 10px;
+}
+body #main-form article .option a:hover {
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+}
+body #main-form p {
+  color: rgb(73, 46, 144);
+  text-align: center;
+}
+body #accueil {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  width: 70%;
+  padding: 2.5%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 2.5%;
+}
+body #accueil h2 {
+  color: white;
+  -webkit-text-stroke: 0.5px rgb(73, 46, 144);
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 2.5%;
+}
+body #accueil article {
+  margin: 0 auto 1% auto;
+  width: 90%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body #accueil article h3 {
+  color: white;
+  -webkit-text-stroke: 0.5px rgb(73, 46, 144);
+  align-self: flex-start;
+  margin: 20px 0 0 20px;
+}
+body #accueil article p {
+  color: rgb(73, 46, 144);
+  text-align: justify;
+  margin: 20px;
+}
+body #accueil article .tournament-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #accueil article .tournament-details li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: rgb(73, 46, 144);
+}
+body #accueil article .tournament-details li b {
+  font-weight: lighter;
+  color: white;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+}
+body .edit select, body input[type=datetime-local] {
+  margin: 0 auto;
+  width: 50%;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 7.5px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 2.5%;
+}
+body .edit select:hover, body input[type=datetime-local]:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #nb {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 7.5px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 2.5%;
+}
+body #nb:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #sub-del {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .delete-btn {
+  padding: 10px 15px;
+  border: 1px solid red !important;
+  border-radius: 4px;
+  color: red !important;
+  text-decoration: none;
+}
+body .delete-btn:hover {
+  transform: scale(1.1);
+  color: white !important;
+  background-color: red !important;
+  transition: 0.5s ease-in-out !important;
+  text-decoration: underline white !important;
+  box-shadow: none !important;
+}
+body #tournois {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+body #tournois .btn-ul a, body #tournois .tournament-btn-ul a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  margin: 2.5% 0;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgb(73, 46, 144);
+  transition: 0.5s;
+}
+body #tournois .btn-ul li:nth-child(3) {
+  margin-left: auto;
+}
+body #tournois .btn-ul li:first-child, body #tournois .tournament-btn-ul li:first-child {
+  margin-right: 2.5%;
+}
+body #tournois .btn-ul li:hover, body #tournois .tournament-btn-ul li:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+}
+body #tournois .btn-ul li:hover a, body #tournois .tournament-btn-ul li:hover a {
+  transition: 0.5s;
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+}
+body #tournois .btn-ul {
+  width: 70%;
+  margin: 12% auto 2% auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+body #tournois .btn-ul .state {
+  width: 20%;
+}
+body #tournois .btn-ul .state #state {
+  color: rgb(73, 46, 144);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+}
+body #tournois #main-display {
+  width: 70%;
+  padding: 2.5%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 2.5%;
+}
+body #tournois #main-display h2 {
+  width: 25%;
+  text-align: center;
+  color: white;
+  color: rgb(73, 46, 144);
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(73, 46, 144);
+  margin-bottom: 2.5%;
+}
+body #tournois details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
 }
 @keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-left: -10px;
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0px;
-    }
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+body #tournois article {
+  margin-bottom: 1%;
+  margin: 0 auto 1% auto;
+  width: 90%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #tournois article summary {
+  list-style: none;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+  padding: 20px 0;
+}
+body #tournois article summary:hover {
+  cursor: pointer;
+  color: rgb(73, 46, 144);
+}
+body #tournois article .tournament-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #tournois article .tournament-details li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: rgb(73, 46, 144);
+}
+body #tournois article .tournament-details li b {
+  font-weight: lighter;
+  color: white;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+}
+body #tournois article .tournament-btn-ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  margin: 10% 0;
+}
+body #details {
+  width: 80%;
+  margin: 10% auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+}
+body #details h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+  color: #fff;
+  margin-top: 5%;
+}
+body #details .player {
+  width: 20%;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #details .player h3 {
+  font-size: 1em;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+  color: #fff;
+  padding-bottom: 5px;
+  text-decoration: underline rgb(73, 46, 144) 2px;
+  margin-bottom: 5%;
+}
+body #details .player .tournament-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+body #details .player .tournament-details li {
+  list-style: none;
+  margin-bottom: 10px;
+  color: rgb(73, 46, 144);
+}
+body #details .player .tournament-details li b {
+  font-weight: lighter;
+  color: white;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+}
+body #details .tree {
+  width: 60%;
+  margin: 5% auto 10% 5%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body #details .tree h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  -webkit-text-stroke: 1px rgb(73, 46, 144);
+  color: #fff;
+  padding-bottom: 5px;
+  text-decoration: underline rgb(73, 46, 144) 2px;
+  margin-bottom: 5%;
+}
+body #details .tree .tree-column {
+  height: 30vh;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body #details .tree .tree-column:last-child p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+}
+body #details .tree .tree-column p {
+  text-align: center;
+  width: 140%;
+  padding: 2px 5px;
+  color: rgb(73, 46, 144);
+  background-color: white;
+  border-radius: 4px;
+}
+body #score {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: rgb(73, 46, 144);
+}
+body #score h3, body #score h4 {
+  width: 100%;
+  text-align: center;
+}
+body #score section {
+  width: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+body #score section select, body #score section label {
+  margin: 10% 0;
+  width: 45% !important;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.6);
+}
+body #score section select input[type=number], body #score section label input[type=number] {
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  padding: 2px 5px;
+  border: none;
+}
+body #score .win {
+  margin-top: 10%;
+  width: 70%;
+}
+body #score .win label {
+  width: 100%;
+}
+body #score .win label input {
+  margin-right: 7.5%;
+}
+body footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+  color: white;
+  background-color: rgba(73, 46, 144, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgb(73, 46, 144);
+}
+body details section {
+  width: 140%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(-15%);
+}
+body details button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  margin: 2.5% 0;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: rgb(73, 46, 144);
+  transition: 0.5s;
+}
+body details button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
+  cursor: pointer;
+}
+body .red {
+  color: red;
 }
 
-#tournois article {
-    margin-bottom: 1%;
-    margin: 0 auto 1% auto;
-    width: 90%;
-    height: 60%;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tournois summary:hover {
-    cursor: pointer;
-    color: rgb(73, 46, 144);
-}
-
-#tournois summary {
-    list-style: none;
-    text-align: center;
-    font-size: x-large;
-    color: white;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-    padding: 20px 0;
-}
-
-.tournament-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tournament-details li {
-    list-style: none;
-    margin-bottom: 10px;
-    color: rgb(73, 46, 144);
-}
-
-.tournament-details li b {
-    font-weight: lighter;
-    color: white;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-}
-
-#tournois .btn-ul {
-    width: 70%;
-    margin: 12% auto 2% auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.tournament-btn-ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    margin: 10% 0;
-}
-
-.btn-ul a, .tournament-btn-ul a {
-    background-color: transparent;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    margin: 2.5% 0;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: rgb(73, 46, 144);
-    transition: 0.5s;
-}
-
-.btn-ul li:first-child, .tournament-btn-ul li:first-child {
-    margin-right: 2.5%;
-}
-
-.btn-ul li:nth-child(3) {
-    margin-left: auto;
-}
-
-.btn-ul li:hover, .tournament-btn-ul li:hover {
-    transform: scale(1.05);
-    transition: .5s;
-    cursor: pointer;
-}
-
-.btn-ul li:hover a, .tournament-btn-ul li:hover a {
-    transition: .5s;
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-}
-
-.btn-ul .state {
-    width: 20%;
-}
-
-#state {
-    color: rgb(73, 46, 144);
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    width: 100%;
-}
-
-details section {
-    width: 140%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    transform: translateX(-15%);
-}
-
-#details {
-    width: 80%;
-    margin: 10% auto;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 4px;
-    backdrop-filter: blur(5px);
-}
-
-#details h2 {
-    text-align: center;
-    width: 100%;
-    font-size: 1.5em;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-    color: #fff;
-    margin-top: 5%;
-}
-
-#details h3 {
-    font-size: 1em;
-    -webkit-text-stroke: 1px rgb(73, 46, 144);
-    color: #fff;
-    padding-bottom: 5px;
-    text-decoration: underline rgb(73, 46, 144) 2px;
-    margin-bottom: 5%;
-}
-
-.player {
-    width: 20%;
-    margin: 0 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.player .tournament-details {
-    margin-top: 10%;
-}
-
-.tree {
-    width: 60%;
-    margin: 5% auto 10% 5%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.tree h3 {
-    width: 100%;
-    text-align: center;
-}
-
-.tree .tree-column {
-    height: 30vh;
-    margin: 0 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.tree .tree-column:last-child p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 0;
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-}
-
-.tree .tree-column p {
-    text-align: center;
-    width: 140%;
-    padding: 2px 5px;
-    color: rgb(73, 46, 144);
-    background-color: white;
-    border-radius: 4px;
-}
-
-details button {
-    background-color: transparent;
-    color: #fff;
-    font-size: 16px;
-    margin: 2.5% 0;
-    padding: 10px 15px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: rgb(73, 46, 144);
-    transition: 0.5s;
-}
-
-details button:hover {
-    transform: scale(1.1);
-    box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
-    cursor: pointer;
-}
+/*# sourceMappingURL=style.css.map */
