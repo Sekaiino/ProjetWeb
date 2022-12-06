@@ -159,9 +159,7 @@ body {
             width: 12.5%;
             &[open] {
                 background-color: rgba(73, 46, 144, 1);
-                #arrow {
-                    transform: rotate(90deg);
-                }
+                #arrow {transform: rotate(90deg);}
             }
             summary {
                 color: #fff;
@@ -169,12 +167,8 @@ body {
                 display: flex;
                 flex-flow: row wrap;
                 align-items: center;
-                p {
-                    margin: 0 5%;
-                }
-                &:hover {
-                    cursor: pointer;
-                }
+                p {margin: 0 5%;}
+                &:hover {cursor: pointer;}
             }
             ul {
                 position: relative;
@@ -504,13 +498,9 @@ body {
             background-color: rgb(73, 46, 144);
             transition: 0.5s;
         }
-        .btn-ul li:nth-child(3) {
-            margin-left: auto;
-        }
+        .btn-ul li:nth-child(3) {margin-left: auto;}
         .btn-ul li, .tournament-btn-ul li {
-            &:first-child {
-                margin-right: 2.5%;
-            }
+            &:first-child {margin-right: 2.5%;}
             &:hover {
                 transform: scale(1.05);
                 transition: .5s;
@@ -559,9 +549,7 @@ body {
                 margin-bottom: 2.5%;
             }
         }
-        details[open] summary ~ * {
-            animation: sweep 0.5s ease-in-out;
-        }
+        details[open] summary ~ * {animation: sweep 0.5s ease-in-out;}
         @keyframes sweep {
             0% {
                 opacity: 0;
@@ -780,7 +768,7 @@ body {
         border-top: 1px solid rgba(73, 46, 144, 1);
     }
 
-    // Unknown
+    // General
     details section {
         width: 140%;
         display: flex;
@@ -805,7 +793,5 @@ body {
             cursor: pointer;
         }
     }
-    .red {
-        color: red;
-    }
+    .red {color: red;}
 }
