@@ -325,6 +325,43 @@ body {
 
     // Main form
     #main-form {
+        .edit-score {
+            h4 {
+                color: rgb(73, 46, 144);
+                text-decoration: underline;
+                font-size: 1.1em;
+            }
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #fff;
+            margin-top: 2vh;
+            aside {
+                margin: 2vh 0;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: baseline;
+                justify-content: center;
+                input {
+                    color: rgba(0, 0, 0, 0.6);
+                    width: 4vw;
+                    padding: 2px 5px;
+                    text-align: center;
+                    border: none;
+                    border-radius: 4px;
+                    &.first-input {margin-right: 1vw;}
+                    &.second-input {margin-left: 1vw;}
+                }
+                label {width: 30%;}
+                b {color: rgba(0, 0, 0, 0.6);}
+                button {
+                    font-size: 0.6em;
+                    background-color: rgb(73, 46, 144);
+
+                }
+            }
+        }
         button {
             background-color: transparent;
             color: #fff;
@@ -482,25 +519,25 @@ body {
 
     // Tournaments display
     #tournois {
+        margin-top: 15%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        .btn-ul a, .tournament-btn-ul a {
+        .tournament-btn-ul a {
             background-color: transparent;
             text-decoration: none;
             color: #fff;
-            font-size: 16px;
+            font-size: 0.9em;
             margin: 2.5% 0;
-            padding: 10px 15px;
+            padding: 7.5px 12.5px;
             border: 1px solid #fff;
             border-radius: 5px;
             background-color: rgb(73, 46, 144);
             transition: 0.5s;
         }
-        .btn-ul li:nth-child(3) {margin-left: auto;}
-        .btn-ul li, .tournament-btn-ul li {
-            &:first-child {margin-right: 2.5%;}
+        .tournament-btn-ul li {
+            margin: 0 .5vw;
             &:hover {
                 transform: scale(1.05);
                 transition: .5s;
@@ -511,24 +548,16 @@ body {
                 }
             }
         }
-        .btn-ul {
-            width: 70%;
-            margin: 12% auto 2% auto;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            align-items: center;
-            .state {
-                width: 20%;
-                #state {
-                    color: rgb(73, 46, 144);
-                    padding: 5px 10px;
-                    border: none;
-                    border-radius: 3px;
-                    width: 100%;
-                }
-            }
+
+        #state {
+            color: rgb(73, 46, 144);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            width: 7.5vw;
+            margin: 0 15% 2.5% auto;
         }
+
         #main-display {
             width: 70%;
             padding: 2.5%;

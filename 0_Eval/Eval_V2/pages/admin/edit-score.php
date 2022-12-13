@@ -18,57 +18,54 @@
             include("../../inc/header.inc.php") 
         ?>
 
-<main id="main-form">
+        <main id="main-form">
             <article>
-                <h3>Edition des scores</h3>
                 <form>
-                    <label class="edit" for="tournament">
-                        <b>Sélectionnez le tournoi à modifier:</b>
-                        <select name="tournament" id="tournament">
-                            <option value="tournoi-1">Tournoi 1</option>
-                            <option value="tournoi-2">Tournoi 2</option>
-                            <option value="tournoi-3">Tournoi 3</option>
-                            <option value="tournoi-4">Tournoi 4</option>
-                            <option value="tournoi-5">Tournoi 5</option>
-                        </select>
-                    </label>
-                    <aside id="score">
-                        <h3>Scores:</h3>
-                        <section>
-                            <h4>Joueur 1</h4>
-                            <select name="player1" id="player1">
-                                <option value="joueur-1">Joueur 1</option>
-                                <option value="joueur-2">Joueur 2</option>
-                                <option value="joueur-3">Joueur 3</option>
-                                <option value="joueur-4">Joueur 4</option>
-                                <option value="joueur-5">Joueur 5</option>
-                                <option value="joueur-6">Joueur 6</option>
-                                <option value="joueur-7">Joueur 7</option>
-                                <option value="joueur-8">Joueur 8</option>
-                            </select>
-                            <label for="score-j1"><input name="score-j1" id="score-j1" type="number" min="0" value="0"></label>
-                        </section>
-                        <section>
-                            <h4>Joueur 2</h4>
-                            <label for="score-j2"><input name="score-j2" id="score-j2" type="number" min="0" value="0"></label>
-                            <select name="player2" id="player2">
-                                <option value="joueur-1">Joueur 1</option>
-                                <option value="joueur-2">Joueur 2</option>
-                                <option value="joueur-3">Joueur 3</option>
-                                <option value="joueur-4">Joueur 4</option>
-                                <option value="joueur-5">Joueur 5</option>
-                                <option value="joueur-6">Joueur 6</option>
-                                <option value="joueur-7">Joueur 7</option>
-                                <option value="joueur-8">Joueur 8</option>
-                            </select>
-                        </section>
-                        <section class="win">
-                            <h4>Confirmer le gagnant:</h4>
-                            <label for="win-player1"><input type="radio" name="winner" id="win-player1">Joueur 1</label>
-                            <label for="win-player2"><input type="radio" name="winner" id="win-player2">Joueur 2</label>
-                        </section>
-                    </aside>
-
+                    <h3>Scores:</h3>
+                    <section class="edit-score">
+                        <h4>1/4 de finale</h4>
+                        <aside>
+                            <label for="quart_1j1">Joueur1</label><input class="first-input" name="quart_1j1" id="quart_1j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="quart_1j2" id="quart_1j2" type="number" min="0" value="0"><label for="quart_1j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                        <aside>
+                            <label for="quart_2j1">Joueur1</label><input class="first-input" name="quart_2j1" id="quart_2j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="quart_2j2" id="quart_2j2" type="number" min="0" value="0"><label for="quart_2j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                        <aside>
+                            <label for="quart_3j1">Joueur1</label><input class="first-input" name="quart_3j1" id="quart_3j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="quart_3j2" id="quart_3j2" type="number" min="0" value="0"><label for="quart_3j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                        <aside>
+                            <label for="quart_4j1">Joueur1</label><input class="first-input" name="quart_4j1" id="quart_4j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="quart_4j2" id="quart_4j2" type="number" min="0" value="0"><label for="quart_4j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                    </section>
+                    <section class="edit-score">
+                        <h4>1/2 finale</h4>
+                        <aside>
+                            <label for="demi_1j1">Joueur1</label><input class="first-input" name="demi_1j1" id="demi_1j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="demi_1j2" id="demi_1j2" type="number" min="0" value="0"><label for="demi_1j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                        <aside>
+                            <label for="demi_2j1">Joueur1</label><input class="first-input" name="demi_2j1" id="demi_2j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="demi_2j2" id="demi_2j2" type="number" min="0" value="0"><label for="demi_2j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                    </section>
+                    <section class="edit-score">
+                        <h4>Finale</h4>
+                        <aside>
+                            <label for="fin_1j1">Joueur1</label><input class="first-input" name="fin_1j1" id="fin_1j1" type="number" min="0" value="0"><b>-</b>
+                            <input class="second-input" name="fin_1j2" id="fin_1j2" type="number" min="0" value="0"><label for="fin_1j2">Joueur2</label>
+                            <button>Valider vainqueur</button>
+                        </aside>
+                    </section>
                     <button type="submit">Confirmer</button>
                 </form>
             </article>

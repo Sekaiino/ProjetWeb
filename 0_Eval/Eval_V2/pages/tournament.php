@@ -19,21 +19,11 @@
         ?>
 
         <main id="tournois">
-            <ul class="btn-ul">
-                <li>
-                    <a href="./admin/edit-score.php">Edition des scores</a>
-                </li>
-                <li>
-                    <a href="./admin/edit-tournament.php">Edition des tournois</a>
-                </li>
-                <li class="state">
-                    <select name="state" id="state">
-                        <option value="all">Tous</option>
-                        <option value="open">Ouvert</option>
-                        <option value="closed">Fermé</option>
-                    </select>
-                </li>
-            </ul>
+            <select name="state" id="state">
+                <option value="all">Tous</option>
+                <option value="open">Ouvert</option>
+                <option value="closed">Fermé</option>
+            </select>
             <section id="main-display">
                 <h2>Liste des tournois</h2>
                 <article>
@@ -50,6 +40,8 @@
                         <ul class="tournament-btn-ul">
                             <li><a href="#">Rejoindre</a></li>
                             <li><a href="./tournament-details.php">Détails du tournoi</a></li>
+                            <li><a href="./admin/edit-score.php">Edition des scores</a></li>
+                            <li><a href="./admin/edit-tournament.php">Edition des tournois</a></li>
                         </ul>
                     </details>
                 </article>
@@ -67,6 +59,8 @@
                         <ul class="tournament-btn-ul">
                             <li><a href="#">Rejoindre</a></li>
                             <li><a href="./tournament-details.php">Détails du tournoi</a></li>
+                            <li><a href="./admin/edit-score.php">Edition des scores</a></li>
+                            <li><a href="./admin/edit-tournament.php">Edition des tournois</a></li>
                         </ul>
                     </details>
                 </article>
@@ -84,6 +78,8 @@
                         <ul class="tournament-btn-ul">
                             <li><a href="#">Rejoindre</a></li>
                             <li><a href="./tournament-details.php">Détails du tournoi</a></li>
+                            <li><a href="./admin/edit-score.php">Edition des scores</a></li>
+                            <li><a href="./admin/edit-tournament.php">Edition des tournois</a></li>
                         </ul>
                     </details>
                 </article>
@@ -101,6 +97,8 @@
                         <ul class="tournament-btn-ul">
                             <li><a href="#">Rejoindre</a></li>
                             <li><a href="./tournament-details.php">Détails du tournoi</a></li>
+                            <li><a href="./admin/edit-score.php">Edition des scores</a></li>
+                            <li><a href="./admin/edit-tournament.php">Edition des tournois</a></li>
                         </ul>
                     </details>
                 </article>
@@ -118,6 +116,8 @@
                         <ul class="tournament-btn-ul">
                             <li><a href="#">Rejoindre</a></li>
                             <li><a href="./tournament-details.php">Détails du tournoi</a></li>
+                            <li><a href="./admin/edit-score.php">Edition des scores</a></li>
+                            <li><a href="./admin/edit-tournament.php">Edition des tournois</a></li>
                         </ul>
                     </details>
                 </article>

@@ -316,6 +316,50 @@ body #main-form article h3 {
   font-size: 1.5em;
   margin: 15% 0 7.5% 0;
 }
+body #main-form .edit-score {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  margin-top: 2vh;
+}
+body #main-form .edit-score h4 {
+  color: rgb(73, 46, 144);
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+body #main-form .edit-score aside {
+  margin: 2vh 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+body #main-form .edit-score aside input {
+  color: rgba(0, 0, 0, 0.6);
+  width: 4vw;
+  padding: 2px 5px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+body #main-form .edit-score aside input.first-input {
+  margin-right: 1vw;
+}
+body #main-form .edit-score aside input.second-input {
+  margin-left: 1vw;
+}
+body #main-form .edit-score aside label {
+  width: 30%;
+}
+body #main-form .edit-score aside b {
+  color: rgba(0, 0, 0, 0.6);
+}
+body #main-form .edit-score aside button {
+  font-size: 0.6em;
+  background-color: rgb(73, 46, 144);
+}
 body #main-form button {
   background-color: transparent;
   color: #fff;
@@ -466,55 +510,43 @@ body .delete-btn:hover {
   box-shadow: none !important;
 }
 body #tournois {
+  margin-top: 15%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
-body #tournois .btn-ul a, body #tournois .tournament-btn-ul a {
+body #tournois .tournament-btn-ul a {
   background-color: transparent;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 0.9em;
   margin: 2.5% 0;
-  padding: 10px 15px;
+  padding: 7.5px 12.5px;
   border: 1px solid #fff;
   border-radius: 5px;
   background-color: rgb(73, 46, 144);
   transition: 0.5s;
 }
-body #tournois .btn-ul li:nth-child(3) {
-  margin-left: auto;
+body #tournois .tournament-btn-ul li {
+  margin: 0 0.5vw;
 }
-body #tournois .btn-ul li:first-child, body #tournois .tournament-btn-ul li:first-child {
-  margin-right: 2.5%;
-}
-body #tournois .btn-ul li:hover, body #tournois .tournament-btn-ul li:hover {
+body #tournois .tournament-btn-ul li:hover {
   transform: scale(1.05);
   transition: 0.5s;
   cursor: pointer;
 }
-body #tournois .btn-ul li:hover a, body #tournois .tournament-btn-ul li:hover a {
+body #tournois .tournament-btn-ul li:hover a {
   transition: 0.5s;
   box-shadow: 3px 1px #e45a84, -3px -1px #aedaf2;
 }
-body #tournois .btn-ul {
-  width: 70%;
-  margin: 12% auto 2% auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-body #tournois .btn-ul .state {
-  width: 20%;
-}
-body #tournois .btn-ul .state #state {
+body #tournois #state {
   color: rgb(73, 46, 144);
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
-  width: 100%;
+  width: 7.5vw;
+  margin: 0 15% 2.5% auto;
 }
 body #tournois #main-display {
   width: 70%;
