@@ -254,9 +254,8 @@ body {
                 }
                 #pp {
                     width: 30%;
+                    margin: 0 auto 5% auto;
                     color: rgba(0, 0, 0, 0.6);
-                    margin: 0 auto 5%;
-
                     &::-webkit-file-upload-button {display: none;}
                 }
                 #name {

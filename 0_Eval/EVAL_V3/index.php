@@ -10,21 +10,14 @@
         <title>eWins - Accueil</title>
     </head>
     <body>
-        <?php
-            $a = FALSE; 
-            $img = ".";
-            $pages = "./php";
-            $index = ".";
-            include("./inc/header.inc.php") 
-        ?>
-
+        <?php include("./inc/header.inc.php") ?>
         <main id="accueil">
             <h2>Les 5 derniers tournois ouverts</h2>
             <article>
                 <h3>Tournoi 1</h3>
                 <p>
                     Tournoi de belote qui opposera les joueurs dans le but de remporter le
-                    tournoi qui aura pour seul prix, la satisfaction personelle du vainqueur.
+                    tournoi qui aura pour seul prix, la satisfaction personnel du vainqueur.
                 </p>
                 <ul class="tournament-details">
                     <li><b>Sport:</b> belote</li>
@@ -39,7 +32,7 @@
                 <h3>Tournoi 2</h3>
                 <p>
                     Tournoi de tennis qui opposera les joueurs dans le but de remporter le
-                    tournoi qui aura pour seul prix, la satisfaction personelle du vainqueur.
+                    tournoi qui aura pour seul prix, la satisfaction personnel du vainqueur.
                 </p>
                 <ul class="tournament-details">
                     <li><b>Sport:</b> échecs</li>
@@ -54,7 +47,7 @@
                 <h3>Tournoi 3</h3>
                 <p>
                     Tournoi de ping-pong qui opposera les joueurs dans le but de remporter le
-                    tournoi qui aura pour seul prix, la satisfaction personelle du vainqueur.
+                    tournoi qui aura pour seul prix, la satisfaction personnel du vainqueur.
                 </p>
                 <ul class="tournament-details">
                     <li><b>Sport:</b> tennis</li>
@@ -69,7 +62,7 @@
                 <h3>Tournoi 4</h3>
                 <p>
                     Tournoi de FIFA qui opposera les joueurs dans le but de remporter le tournoi
-                    qui aura pour seul prix, la satisfaction personelle du vainqueur.
+                    qui aura pour seul prix, la satisfaction personnel du vainqueur.
                 </p>
                 <ul class="tournament-details">
                     <li><b>Sport:</b> ping-pong</li>
@@ -84,7 +77,7 @@
                 <h3>Tournoi 5</h3>
                 <p>
                     Tournoi d'échecs qui opposera les joueurs dans le but de remporter le
-                    tournoi qui aura pour seul prix, la satisfaction personelle du vainqueur.
+                    tournoi qui aura pour seul prix, la satisfaction personnel du vainqueur.
                 </p>
                 <ul class="tournament-details">
                     <li><b>Sport:</b> FIFA</li>

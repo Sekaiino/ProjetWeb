@@ -7,19 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        $tab = array("Belgique" => "Liège", "Italie" => "Rome", "France" => "Paris");
-        $a = "This is a string";
-
-        echo "This is an echo: $a";
-    ?>
-    <!-- Display variable -->
-    <p><?php echo $a; ?></p>
-
-    <!-- Display variable in loop -->
-    <?php foreach($tab as $country => $city): ?>
-        <h4><?php echo "La capital de $country est $city." ?></h4>
-    <?php endforeach; ?>
-    
+    <?php echo __DIR__; ?>
 </body>
 </html>

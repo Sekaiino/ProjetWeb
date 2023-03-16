@@ -247,8 +247,8 @@ body #main-form article form .pp span {
 }
 body #main-form article form #pp {
   width: 30%;
+  margin: 0 auto 5% auto;
   color: rgba(0, 0, 0, 0.6);
-  margin: 0 auto 5%;
 }
 body #main-form article form #pp::-webkit-file-upload-button {
   display: none;
